@@ -9,7 +9,7 @@ const index = () => {
     <>
       <Header />
       <main>
-        <Breadcrumb title="Terms & Conditions" subTitle="Terms & Conditions" />
+        <Breadcrumb title="Careers" subTitle="Careers" />
         <TermsConditionMain />
       </main>
       <FooterOne />

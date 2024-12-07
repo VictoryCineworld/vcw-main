@@ -8,7 +8,7 @@ const index = () => {
     const item = serviceData[0]
     return (
         <Wrapper>
-            <SEO pageTitle="Faime"/>
+            <SEO pageTitle="VictoryCineworld"/>
             <ServiceDetails item={item}/>
         </Wrapper>
     );

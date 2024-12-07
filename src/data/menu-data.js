@@ -1,7 +1,7 @@
 const menu_data = [
   {
     id: 1,
-    hasDropdown: true,
+    hasDropdown: false,
     active:true,
     title: "Home",
     link: "/",
@@ -16,11 +16,26 @@ const menu_data = [
   {
     id: 2,
     hasDropdown: true,
-    title: "Movie",
+    title: "About",
     link: "/movie",
     submenus: [
-      { title: "Movie", link: "/movie" },
-      { title: "Movie-details", link: "/movie-details" },
+      { title: "Our Process", link: "/about" },
+      { title: "Team", link: "/team" },
+      { title: "Career", link: "/terms-conditions" },
+    ],
+  },
+  {
+    id: 10,
+    hasDropdown: true,
+    title: "Services",
+    link: "/service",
+    submenus: [
+      { title: "Content Creation", link: "/service-details/9" },
+      { title: "Video Production", link: "/service-details/10" },
+      { title: "Corporate Video", link: "/service-details/11" },
+      { title: "IT Services", link: "/service-details/12" },
+      { title: "Documentory", link: "/service-details/13" },
+      { title: "Digital Marketing", link: "/service-details/14" },
     ],
   },
   {
@@ -37,46 +52,47 @@ const menu_data = [
 
   {
     id: 4,
-    title: "Pages",
-    megaMenu: true,
-    link: "/about",
-    pages: true,
+    title: "FAQs",
+    hasDropdown:false,
+    megaMenu: false,
+    link: "/faq",
+    pages: false,
     mega_menus: [
-      {
-        title: "Page Layout 1",
-        link: "#",
-        submenus: [
-          { title: "About us", link: "/about" },
-          { title: "Service", link: "/service" },
-          { title: "Service Details", link: "/service-details" },
-          { title: "Team", link: "/team" },
-          { title: "Team Details", link: "/team-details" },
-          { title: "Pricing", link: "/pricing" },
-        ],
-      },
-      {
-        title: "Page Layout 2",
-        link: "#",
-        submenus: [
-          { title: "Faq", link: "/faq" },
-          { title: "Terms & Conditions", link: "/terms-conditions" },
-          { title: "Privacy & Policy", link: "/policy-privacy" },
-          { title: "Login", link: "/login" },
-          { title: "Register", link: "/register" },
-          { title: "404", link: "/404" },
-        ],
-      },
-      {
-        title: "Page Layout 3",
-        link: "#",
-        submenus: [
-          { title: "Shop-Sidebar", link: "/shop-sidebar" },
-          { title: "Shop 4 Column", link: "/shop-4" },
-          { title: "Cart", link: "/cart" },
-          { title: "Checkout", link: "/checkout" },
-          { title: "Shop Details", link: "/shop-details" }
-        ],
-      },
+      // {
+      //   title: "Page Layout 1",
+      //   link: "#",
+      //   submenus: [
+      //     { title: "About us", link: "/about" },
+      //     { title: "Service", link: "/service" },
+      //     { title: "Service Details", link: "/service-details" },
+      //     { title: "Team", link: "/team" },
+      //     { title: "Team Details", link: "/team-details" },
+      //     { title: "Pricing", link: "/pricing" },
+      //   ],
+      // },
+      // {
+      //   title: "Page Layout 2",
+      //   link: "#",
+      //   submenus: [
+      //     { title: "Faq", link: "/faq" },
+      //     { title: "Terms & Conditions", link: "/terms-conditions" },
+      //     { title: "Privacy & Policy", link: "/policy-privacy" },
+      //     { title: "Login", link: "/login" },
+      //     { title: "Register", link: "/register" },
+      //     { title: "404", link: "/404" },
+      //   ],
+      // },
+      // {
+      //   title: "Page Layout 3",
+      //   link: "#",
+      //   submenus: [
+      //     { title: "Shop-Sidebar", link: "/shop-sidebar" },
+      //     { title: "Shop 4 Column", link: "/shop-4" },
+      //     { title: "Cart", link: "/cart" },
+      //     { title: "Checkout", link: "/checkout" },
+      //     { title: "Shop Details", link: "/shop-details" }
+      //   ],
+      // },
     ],
   },
   {

@@ -15,8 +15,8 @@ const index = () => {
     <>
       <Header />
       <main>
-        <Breadcrumb title="About Us" subTitle="About Us" />
-        <ServicesSection />
+        <Breadcrumb title="Our Process" subTitle="Our Process" />
+        {/* <ServicesSection /> */}
         <AboutArea />
         <TestimonialSliderOne />
         <AchievementArea />

@@ -20,7 +20,7 @@ const ServiceDetails = () => {
     }, [id])
     return (
         <Wrapper>
-        <SEO pageTitle='Faime' />
+        <SEO pageTitle='VictoryCineworld' />
         <ServiceDetailsPage item={service}/>
     </Wrapper>
     );

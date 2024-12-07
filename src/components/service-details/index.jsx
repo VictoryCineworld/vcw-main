@@ -11,7 +11,7 @@ const index = ({ item }) => {
     <>
       <Header />
       <main>
-        <Breadcrumb title="Service Details" subTitle="Service Details" />
+        <Breadcrumb title="Services" subTitle="Service Details" />
         <ServiceDetails />
         <CaseQouteArea />
         <ContactSection />
