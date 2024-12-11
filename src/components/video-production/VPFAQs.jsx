@@ -1,6 +1,6 @@
 import React from "react";
 
-const FaqSection = () => {
+const VPFAQs = () => {
   return (
     <div className="fm-faq-area section-spacing">
       <div className="bd-accordion-fix">
@@ -27,7 +27,8 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-1"
                       >
-                        1. What services does Victory Cineworld offer?
+                        1. What is the typical turnaround time for a video
+                        project?
                       </button>
                     </h4>
                     <div
@@ -38,10 +39,11 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          Victory Cineworld offers a wide range of media and IT
-                          services, including video production, content
-                          creation, digital marketing, web development, and
-                          software development.
+                          The turnaround time for a video project can vary
+                          depending on the complexity and scope of the project.
+                          However, we strive to deliver projects efficiently
+                          without compromising quality. We'll provide you with a
+                          detailed timeline during the initial consultation.
                         </p>
                       </div>
                     </div>
@@ -56,7 +58,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-2"
                       >
-                        2. What is your experience in the industry?
+                        2. What is your pricing structure?
                       </button>
                     </h4>
                     <div
@@ -67,9 +69,11 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          Our team has 30+ years of experience in the media and
-                          IT industry. We have worked with clients of all sizes,
-                          from startups to large corporations.
+                          Our pricing is customized based on the specific needs
+                          of each project. Factors such as video length,
+                          complexity, and post-production requirements influence
+                          the final cost. We'll provide a detailed quote after
+                          understanding your project requirements.
                         </p>
                       </div>
                     </div>
@@ -84,7 +88,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-3"
                       >
-                        3. How do you ensure the quality of your services?
+                        3.Do you offer video editing services?
                       </button>
                     </h4>
                     <div
@@ -95,10 +99,10 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          We maintain high quality standards by using
-                          state-of-the-art technology and following industry
-                          best practices. Our team of skilled professionals is
-                          dedicated to delivering exceptional results.
+                          Yes, we offer comprehensive video editing services,
+                          including editing, color grading, sound mixing, and
+                          special effects. Our skilled editors can bring your
+                          vision to life.
                         </p>
                       </div>
                     </div>
@@ -113,7 +117,8 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-4"
                       >
-                        4. What is your approach to content creation?
+                        4.How Long Does it Take to See Results from Digital
+                        Marketing?
                       </button>
                     </h4>
                     <div
@@ -124,10 +129,12 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          Our content creation process involves in-depth
-                          research, creative writing, and effective
-                          storytelling. We focus on creating engaging content
-                          that resonates with your target audience.
+                          The time it takes to see results from digital
+                          marketing can vary depending on various factors, such
+                          as your industry, competition, and the specific
+                          strategies implemented. However, with consistent
+                          efforts and effective strategies, you can start seeing
+                          results within a few months.
                         </p>
                       </div>
                     </div>
@@ -143,7 +150,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-5"
                       >
-                        5.How do you handle project timelines and deadlines?
+                        5. How Much Does Digital Marketing Cost?
                       </button>
                     </h4>
                     <div
@@ -154,9 +161,10 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          We prioritize efficient project management and adhere
-                          to strict timelines. Our team works diligently to
-                          ensure timely delivery without compromising quality.
+                          The cost of digital marketing services can vary
+                          depending on your specific needs and budget. We offer
+                          flexible pricing plans to suit different business
+                          requirements.
                         </p>
                       </div>
                     </div>
@@ -171,7 +179,8 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-6"
                       >
-                        6. What is your pricing structure?
+                        6. How Do You Measure the Success of a Digital Marketing
+                        Campaign?
                       </button>
                     </h4>
                     <div
@@ -182,9 +191,10 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          Our pricing is competitive and tailored to your
-                          specific needs. We offer flexible pricing options to
-                          accommodate different budgets.
+                          We use a variety of metrics to measure the success of
+                          our digital marketing campaigns, including website
+                          traffic, conversions, social media engagement, and
+                          return on investment (ROI).
                         </p>
                       </div>
                     </div>
@@ -199,7 +209,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-7"
                       >
-                        7. Can you provide examples of your work?
+                        7.Do You Offer Social Media Management Services?
                       </button>
                     </h4>
                     <div
@@ -210,9 +220,9 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          Yes, we have a portfolio of previous projects that
-                          showcase our work. We can provide you with case
-                          studies and client testimonials.
+                          Yes, we offer social media management services to help
+                          you create and curate engaging content, build a strong
+                          online presence, and interact with your audience.
                         </p>
                       </div>
                     </div>
@@ -227,7 +237,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-8"
                       >
-                        8.How can I get in touch with you to discuss my project?
+                        8.Can You Help Me with Local SEO?
                       </button>
                     </h4>
                     <div
@@ -238,9 +248,9 @@ const FaqSection = () => {
                     >
                       <div className="fm-faq-single-body">
                         <p>
-                          You can contact us through our website, email, or
-                          phone number. We're always happy to answer your
-                          questions and discuss your project requirements.
+                          Absolutely! We specialize in local SEO to help
+                          businesses attract local customers and improve their
+                          visibility on local search engines.
                         </p>
                       </div>
                     </div>
@@ -255,4 +265,4 @@ const FaqSection = () => {
   );
 };
 
-export default FaqSection;
+export default VPFAQs;

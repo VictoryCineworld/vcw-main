@@ -21,7 +21,7 @@ const menu_data = [
     submenus: [
       { title: "Our Process", link: "/about" },
       { title: "Team", link: "/team" },
-      { title: "Career", link: "/terms-conditions" },
+      { title: "Careers", link: "/terms-conditions" },
     ],
   },
   {
@@ -30,12 +30,12 @@ const menu_data = [
     title: "Services",
     link: "/service",
     submenus: [
-      { title: "Content Creation", link: "/service-details/9" },
-      { title: "Video Production", link: "/service-details/10" },
-      { title: "Corporate Video", link: "/service-details/11" },
-      { title: "IT Services", link: "/service-details/12" },
-      { title: "Documentory", link: "/service-details/13" },
-      { title: "Digital Marketing", link: "/service-details/14" },
+      { title: "Content Creation", link: "/content-creation" },
+      { title: "Video Production", link: "/video-production" },
+      { title: "Corporate Video", link: "/corporate-video" },
+      { title: "IT Services", link: "/it-services" },
+      { title: "Documentary", link: "/documentary" },
+      { title: "Digital Marketing", link: "/digital-marketing" },
     ],
   },
   {

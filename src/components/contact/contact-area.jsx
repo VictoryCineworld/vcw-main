@@ -27,8 +27,8 @@ const ContactArea = () => {
                                  <span className="fm-contact-info-icon"><i className="fa-thin fa-envelope-open-text"></i></span>
                                  <div className="fm-contact-info-text">
                                     <h5 className="fm-contact-info-text-label">Email</h5>
-                                    <p><Link href="mailto:faime@example.com">faime@example.com</Link></p>
-                                    <p><Link href="mailto:career@example.fm">career@example.fm</Link></p>
+                                    <p><Link href="mailto:hello@victorycineworld.com">hello@victorycineworld.com</Link></p>
+                                    <p><Link href="mailto:career@example.fm">abc@gmail.cpm</Link></p>
                                  </div>
                               </div>
 
