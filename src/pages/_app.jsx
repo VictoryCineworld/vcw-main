@@ -11,6 +11,7 @@ import { persistStore } from "redux-persist";
 import SEO from '@components/seo';
 import Preloader from '@components/preloader';
 import { useEffect, useState } from 'react';
+import '../styles/globals.css'
 
 let persistor = persistStore(store)
 

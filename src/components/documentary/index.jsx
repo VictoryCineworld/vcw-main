@@ -1,18 +1,16 @@
 import Breadcrumb from "@components/common/breadcrumb/breadcrumb";
-import ContactSection from "@components/common/contact/contact-area";
-import FaqSection from "@components/portfolo-details-page/faq-section";
 import FooterOne from "@layout/footers/footer-one";
 import { Header } from "@layout/index";
 import React from "react";
+import Documentary from "./Documentary";
 
 const index = () => {
   return (
     <>
       <Header />
       <main>
-        <Breadcrumb title="FAQs" subTitle="FAQs" />
-        <FaqSection />
-        <ContactSection />
+        <Breadcrumb title="Corporate Video" subTitle="Corporate Video" />
+        <Documentary />
       </main>
       <FooterOne />
     </>

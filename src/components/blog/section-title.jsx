@@ -9,7 +9,7 @@ const SectionTitle = () => {
                <div className="row section-title-spacing wow fadeInUp">
                   <div className="col-xl-6">
                      <div className="section-title">
-                        <span className="section-subtitle title-anim">Faime News</span>
+                        <span className="section-subtitle title-anim">VictoryCineworld News</span>
                         <h2 className="section-main-title title-anim">Blog Standard </h2>
                      </div>
                   </div>

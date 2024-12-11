@@ -16,51 +16,54 @@ const serviceData = [
     {
         id: 1,
         image: serviceImgOne,
-        title: 'Filming Services',
-        description: 'Consequently all her characters and our all film production service.',
+        title: 'Content Creation ',
+        description: 'Crafting engaging content and designs to elevate and captivate your brand.',
         delay: '0.3s'
     },
     {
         id: 2,
         image: serviceImgTwo,
-        title: 'Motion Graphic',
-        description: 'Consequently all her characters and our all film production service.',
+        title: 'Video Production',
+        description: 'Producing cutting-edge videos that elevate your brand and engage your audience.',
         delay: '0.4s'
     },
     {
         id: 3,
         image: serviceImgThere,
-        title: 'Animation',
-        description: 'Consequently all her characters and our all film production service.',
+        title: 'Digital Marketing',
+        description: 'Driving brand growth with innovative, data-powered digital marketing strategies.',
         delay: '0.5s'
     },
     {
         id: 4,
         image: serviceImgFour,
-        title: 'Film Production',
-        description: 'Consequently all her characters and our all film production service.',
+        title: 'IT Services',
+        description: 'Bringing stories to life with creativity, innovation, and expert production.',
         delay: '0.6s'
     },
     //home-two-data
     {
         id: 5,
-        title: 'Pre-Production',
-        description: 'Playing field is rarely level when it is to making decisions people are amenable',
+        image: serviceImgFour,
+        title: 'Film Production',
+        description: 'Creating powerful corporate videos that showcase your brand’s essence and impact.',
         serviceNum: "01",
         serviceBtn: 'View More',
         delay: '0.3s'
     },
     {
         id: 6,
-        title: 'Videography',
-        description: 'Playing field is rarely level when it is to making decisions people are amenable',
+        image: serviceImgThere,
+        title: 'Corporate Video',
+        description: 'Producing high-quality corporate videos that effectively represent your brand.',
         serviceNum: "02",
         serviceBtn: 'View More',
         delay: '0.4s'
     },
     {
         id: 7,
-        title: 'Cinematography',
+        image: serviceImgThere,
+        title: 'Documentary',
         description: 'Playing field is rarely level when it is to making decisions people are amenable',
         serviceNum: "03",
         serviceBtn: 'View More',
@@ -68,7 +71,8 @@ const serviceData = [
     },
     {
         id: 8,
-        title: 'Equipment Rental',
+        image: serviceImgFour,
+        title: 'Social Media Management',
         description: 'Playing field is rarely level when it is to making decisions people are amenable',
         serviceNum: "04",
         serviceBtn: 'View More',
