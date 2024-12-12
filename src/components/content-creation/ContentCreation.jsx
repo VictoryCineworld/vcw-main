@@ -6,11 +6,13 @@ import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/por
 import ServiceMiddle from "@components/service-details/service-middle";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
 import { Header } from "@layout/index";
+import ContentSub from "./subpage/ContentSub";
 
 const ContentCreation = () => {
   return (
     <>
     <Header/>
+    <ContentSub/>
     <section className="case-details-area">
       <div className="container">
         <div className="row">
