@@ -42,7 +42,7 @@ const VPFAQs = () => {
                           The turnaround time for a video project can vary
                           depending on the complexity and scope of the project.
                           However, we strive to deliver projects efficiently
-                          without compromising quality. We'll provide you with a
+                          without compromising quality. We&apos;ll provide you with a
                           detailed timeline during the initial consultation.
                         </p>
                       </div>
@@ -72,7 +72,7 @@ const VPFAQs = () => {
                           Our pricing is customized based on the specific needs
                           of each project. Factors such as video length,
                           complexity, and post-production requirements influence
-                          the final cost. We'll provide a detailed quote after
+                          the final cost. We&apos;ll provide a detailed quote after
                           understanding your project requirements.
                         </p>
                       </div>

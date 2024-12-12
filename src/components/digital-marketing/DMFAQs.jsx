@@ -58,7 +58,7 @@ const DMFAQs = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-2"
                       >
-                        2.Why Does My Business Need Digital Marketing?
+                        2. Why Does My Business Need Digital Marketing?
                       </button>
                     </h4>
                     <div
@@ -88,7 +88,7 @@ const DMFAQs = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-3"
                       >
-                        3.What Digital Marketing Services Do You Offer?
+                        3. What Digital Marketing Services Do You Offer?
                       </button>
                     </h4>
                     <div
@@ -119,7 +119,7 @@ const DMFAQs = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-4"
                       >
-                        4.How Long Does it Take to See Results from Digital
+                        4. How Long Does it Take to See Results from Digital
                         Marketing?
                       </button>
                     </h4>
@@ -211,7 +211,7 @@ const DMFAQs = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-7"
                       >
-                        7.Do You Offer Social Media Management Services?
+                        7. Do You Offer Social Media Management Services?
                       </button>
                     </h4>
                     <div
@@ -239,7 +239,7 @@ const DMFAQs = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-8"
                       >
-                        8.Can You Help Me with Local SEO?
+                        8. Can You Help Me with Local SEO?
                       </button>
                     </h4>
                     <div

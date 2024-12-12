@@ -143,7 +143,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-5"
                       >
-                        5.How do you handle project timelines and deadlines?
+                        5. How do you handle project timelines and deadlines?
                       </button>
                     </h4>
                     <div
@@ -227,7 +227,7 @@ const FaqSection = () => {
                         aria-expanded="false"
                         aria-controls="fmFaqcollapse-8"
                       >
-                        8.How can I get in touch with you to discuss my project?
+                        8. How can I get in touch with you to discuss my project?
                       </button>
                     </h4>
                     <div
@@ -239,7 +239,7 @@ const FaqSection = () => {
                       <div className="fm-faq-single-body">
                         <p>
                           You can contact us through our website, email, or
-                          phone number. We're always happy to answer your
+                          phone number. We&apos;re always happy to answer your
                           questions and discuss your project requirements.
                         </p>
                       </div>
