@@ -11,7 +11,9 @@ import { persistStore } from "redux-persist";
 import SEO from '@components/seo';
 import Preloader from '@components/preloader';
 import { useEffect, useState } from 'react';
-import '../styles/globals.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 let persistor = persistStore(store)
 
@@ -28,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <SEO font={'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'} />
+      <SEO />
       <Provider store={store}>
         <PersistGate loading={<Preloader />} persistor={persistor}>
           <AppProvider>
