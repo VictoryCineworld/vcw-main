@@ -25,43 +25,60 @@ const FooterOne = () => {
                     <Link href="/">
                       <Image
                         src={Logo}
-                        style={{ width: "auto", height: "auto" }}
+                        style={{ width: "120px", height: "auto" }}
                         alt="Logo"
                       />
                     </Link>
                   </div>
                   <div className="footer-text">
                     <p>
-                      I can film your project whether it is a commercial advertise, a short film or a document film.
+                      {footerData.description.description}
                     </p>
                   </div>
                 </div>
                 <div className="footer-wrapper footer-widget-gallery">
                   <div className="footer-title">
-                    <h4>Our Gallery</h4>
+                    <h4>Our Services</h4>
                   </div>
-                  <ul className="footer-img">
-                    {footerData.gallery.galleryData.map((item, i) => (
-                      <PhotoView src={item.image.src} key={i}>
-                        <li>
-                          <span className="popup-image">
-                            <Image
-                              alt="gallery-image"
-                              style={{ width: "100%", height: "auto" }}
-                              src={item.image}
-                            />
-                          </span>
-                        </li>
-                      </PhotoView>
-                    ))}
+                  <li>
+                  <ul className="mb-3">
+                    <Link href={'/services/video-production'}>
+                    Video Production
+                    </Link>
                   </ul>
+                  <ul className="mb-3">
+                    <Link href={'/services/content-creation-content-designing/campaign-content-creation'}>
+                    Content Creation
+                    </Link>
+                  </ul>
+                  <ul className="mb-3">
+                    <Link href={'/services/digital-marketing/social-media-management'}>
+                    Digital Marketing
+                    </Link>
+                  </ul>
+                  <ul className="mb-3">
+                    <Link href={'/services/video-production/post-production'}>
+                    Post Production
+                    </Link>
+                  </ul>
+                  <ul className="mb-3">
+                    <Link href={'/services/video-production/product-shoot'}>
+                    Film Production
+                    </Link>
+                  </ul>
+                  <ul className="mb-3">
+                    <Link href={'/services/it-services/web-design-development'}>
+                    IT Services
+                    </Link>
+                  </ul>
+                  </li>
                 </div>
                 <div className="footer-wrapper footer-widget-social">
                   <div className="footer-title">
-                    <h4>Follow Me</h4>
+                    <h4>Follow Us</h4>
                   </div>
                   <div className="footer-info">
-                    <p>Connect me with social media</p>
+                    <p>Connect us with social media</p>
                   </div>
                   <div className="fm-social-2 footer-social-3">
                     {footerData.socialLink.socialIcons.map((item) => (
@@ -98,3 +115,4 @@ const FooterOne = () => {
 };
 
 export default FooterOne;
+

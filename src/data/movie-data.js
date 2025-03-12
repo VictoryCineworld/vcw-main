@@ -20,6 +20,21 @@ import movieNine from "@assets/img/movie/movie10.jpg";
 import movieTen from "@assets/img/movie/movie17.jpg";
 import movieEleven from "@assets/img/movie/movie24.jpg";
 import movieTwelve from "@assets/img/movie/movie21.jpg";
+
+import img1 from "@assets/img/new/1.png";
+import img2 from "@assets/img/new/2.png";
+import img3 from "@assets/img/new/3.png";
+import img4 from "@assets/img/new/4.png";
+import img5 from "@assets/img/new/5.png";
+import img6 from "@assets/img/new/6.png";
+import img7 from "@assets/img/new/7.png";
+import img8 from "@assets/img/new/8.png";
+import img9 from "@assets/img/new/9.png";
+import img10 from "@assets/img/new/10.png";
+
+
+
+
 //movie-slider-4 img
 import movieThartin from "@assets/img/movie/movie1.jpg";
 import movieFourteen from "@assets/img/movie/movie2.jpg";
@@ -888,43 +903,43 @@ const movieData = [
     //movie-slider-six-data
     {
         id: 56,
-        image: movieNine
+        image: img1
     },
     {
         id: 57,
-        image: movieTen
+        image: img2
     },
     {
         id: 58,
-        image: movieOne
+        image: img3
     },
     {
         id: 59,
-        image: movieTwentySix
+        image: img4
     },
     {
         id: 60,
-        image: movieTwentySeven
+        image: img5
     },
     {
         id: 61,
-        image: movieTwentyEight
+        image: img6
     },
     {
         id: 62,
-        image: movieTwentyNine
+        image: img7
     },
     {
         id: 63,
-        image: movieTwentyFive
+        image: img8
     },
     {
         id: 64,
-        image: movieSixteen
+        image: img9
     },
     {
         id: 65,
-        image: movieTwelve
+        image: img10
     },
     {
         id: 66,

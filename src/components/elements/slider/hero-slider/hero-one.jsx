@@ -10,7 +10,7 @@ import "swiper/css/bundle";
 
 const HeroOne = () => {
   return (
-    <div className="fm-slider-main-area">
+    <div className="fm-slider-main-area bg-dark">
       <div className="fm-slider-main-inner">
         <div className="fm-slider-active">
           <div>
@@ -23,16 +23,16 @@ const HeroOne = () => {
               grabCursor={true}
               loop={true}
               effect={"fade"}
-              autoPlay={{
-                delay: 3000,
-                disableOnInteraction: true,
+              autoplay={{
+                delay: 2000,
+                // disableOnInteraction: true,
               }}
               pagination={{
                 clickable: true,
                 el: ".fm-slider-main-slide-pagination",
               }}
             >
-              {SliderItem.slice(0, 3).map((item) => (
+              {SliderItem.slice(0, 6).map((item) => (
                 <SwiperSlide key={item.id}>
                   <div>
                     <div
@@ -43,11 +43,11 @@ const HeroOne = () => {
                       <div className="adjust-header-space"></div>
                       <div className="container">
                         <div className="fm-slider-main-slide-content ">
-                          <span
+                          {/* <span
                             className="fm-director-subtitle fm-translateY-80 fm-delay-03 fm-opacity-0 fm-duration-07"
                           >
                             {item.sliderSubtitle}
-                          </span>
+                          </span> */}
 
                           <h2
                             className="fm-director-title fm-translateY-80 fm-delay-04 fm-opacity-0 fm-duration-07"
@@ -67,14 +67,14 @@ const HeroOne = () => {
                             className="fm-director-button fm-translateY-80 fm-delay-06 fm-opacity-0 fm-duration-07"
                           >
                             <Link
-                              href="/contact"
+                                href={item.sliderbtnLink || ""  }
                               className="fm-director-btn is-white arrow-effect"
                             >
                               {item.sliderbtn} <span><i className="fa-light fa-arrow-right-long"></i></span>
                             </Link>
                           </div>
                         </div>
-                        <div className="fm-director-awards d-none  d-sm-none d-md-block fm-translateX-80 fm-opacity-0 fm-delay-07 fm-duration-07">
+                        {/* <div className="fm-director-awards d-none  d-sm-none d-md-block fm-translateX-80 fm-opacity-0 fm-delay-07 fm-duration-07">
                           {item.images &&
                             item.images.map((item) => (
                               <Image
@@ -86,7 +86,7 @@ const HeroOne = () => {
                                 alt="img not found"
                               />
                             ))}
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -98,17 +98,17 @@ const HeroOne = () => {
             <div className="fm-slider-main-social-abs social-icon-pos">
               <div className="fm-sliderfull-social">
                 <label>Follow</label>
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link href="https://www.facebook.com/profile.php?id=61568906940789&mibextid=ZbWKwL" target="_blank">
                   <i className="fa-brands fa-facebook-f"></i>
                 </Link>
-                <Link href="https://twitter.com/" target="_blank">
-                  <i className="fa-brands fa-twitter"></i>
+                <Link href="https://www.behance.net/victory15" target="_blank">
+                  <i className="fa-brands fa-behance"></i>
                 </Link>
-                <Link href="https://www.instagram.com/" target="_blank">
+                <Link href="https://www.instagram.com/victory_cineworld/" target="_blank">
                   <i className="fa-brands fa-instagram"></i>
                 </Link>
-                <Link href="https://www.pinterest.com/" target="_blank">
-                  <i className="fa-brands fa-pinterest-p"></i>
+                <Link href="https://www.linkedin.com/company/victorycineworld/" target="_blank">
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
               </div>
             </div>

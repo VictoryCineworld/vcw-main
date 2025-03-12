@@ -1,5 +1,5 @@
-import teamImgOne from '@assets/img/team/director1.jpg';
-import teamImgTwo from '@assets/img/team/director2.jpg';
+import teamImgOne from '@assets/img/team/f-1.jpg';
+import teamImgTwo from '@assets/img/team/f-2.jpg';
 import teamImgThere from '@assets/img/team/director3.jpg';
 import teamImgFour from '@assets/img/team/director4.jpg';
 
@@ -14,29 +14,29 @@ const teamData = [
     {
         id: 1,
         teamImg: teamImgOne,
-        director: 'Daniyel',
-        designation: 'Junior Director',
-        teamName: 'Daniyel Feather',
+        director: 'Gaurav',
+        designation: 'Founder',
+        teamName: 'Gaurav Pawar',
         socialIcons: [
             {
                 id: 1,
                 icon: 'fa-brands fa-facebook-f',
-                url: 'https://www.facebook.com/',
+                url: 'https://www.facebook.com/gaurav.pawar.3323',
             },
-            {
-                id: 2,
-                icon: 'fa-brands fa-twitter',
-                url: 'https://twitter.com/',
-            },
+            // {
+            //     id: 2,
+            //     icon: 'fa-brands fa-twitter',
+            //     url: 'https://twitter.com/',
+            // },
             {
                 id: 3,
                 icon: 'fa-brands fa-instagram',
-                url: 'https://www.instagram.com/',
+                url: 'https://www.instagram.com/gauravcpawar?igsh=anFtOWV3c2Rnenpz',
             },
             {
                 id: 4,
-                icon: 'fa-brands fa-pinterest-p',
-                url: 'https://www.pinterest.com/',
+                icon: 'fa-brands fa-linkedin',
+                url: 'https://www.linkedin.com/in/gaurav-pawar-635693141/',
             },
         ],
         delay: '0.3s'
@@ -44,29 +44,29 @@ const teamData = [
     {
         id: 2,
         teamImg: teamImgTwo,
-        director: 'Mary',
-        designation: 'Makeup Artist',
-        teamName: "Mary Gautreaux",
+        director: 'Gunjan',
+        designation: 'Founder',
+        teamName: "Gunjan Kela",
         socialIcons: [
             {
                 id: 1,
                 icon: 'fa-brands fa-facebook-f',
-                url: 'https://www.facebook.com/',
+                url: 'https://www.facebook.com/gunjan.kela.31?rdid=DFPlPVaOggAjKt86&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F12CriheHp2r%2F',
             },
-            {
-                id: 2,
-                icon: 'fa-brands fa-twitter',
-                url: 'https://twitter.com/',
-            },
+            // {
+            //     id: 2,
+            //     icon: 'fa-brands fa-twitter',
+            //     url: 'https://twitter.com/',
+            // },
             {
                 id: 3,
                 icon: 'fa-brands fa-instagram',
-                url: 'https://www.instagram.com/',
+                url: 'https://www.instagram.com/gunjankelaa/',
             },
             {
                 id: 4,
-                icon: 'fa-brands fa-pinterest-p',
-                url: 'https://www.pinterest.com/',
+                icon: 'fa-brands fa-linkedin',
+                url: 'https://www.linkedin.com/in/gunjan-kela-674a5b286/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
             },
         ],
         delay: '0.4s'
@@ -83,11 +83,11 @@ const teamData = [
                 icon: 'fa-brands fa-facebook-f',
                 url: 'https://www.facebook.com/',
             },
-            {
-                id: 2,
-                icon: 'fa-brands fa-twitter',
-                url: 'https://twitter.com/',
-            },
+            // {
+            //     id: 2,
+            //     icon: 'fa-brands fa-twitter',
+            //     url: 'https://twitter.com/',
+            // },
             {
                 id: 3,
                 icon: 'fa-brands fa-instagram',
@@ -95,7 +95,7 @@ const teamData = [
             },
             {
                 id: 4,
-                icon: 'fa-brands fa-pinterest-p',
+                icon: 'fa-brands fa-linkedin',
                 url: 'https://www.pinterest.com/',
             },
         ],
@@ -113,11 +113,11 @@ const teamData = [
                 icon: 'fa-brands fa-facebook-f',
                 url: 'https://www.facebook.com/',
             },
-            {
-                id: 2,
-                icon: 'fa-brands fa-twitter',
-                url: 'https://twitter.com/',
-            },
+            // {
+            //     id: 2,
+            //     icon: 'fa-brands fa-twitter',
+            //     url: 'https://twitter.com/',
+            // },
             {
                 id: 3,
                 icon: 'fa-brands fa-instagram',
@@ -125,7 +125,7 @@ const teamData = [
             },
             {
                 id: 4,
-                icon: 'fa-brands fa-pinterest-p',
+                icon: 'fa-brands fa-linkedin',
                 url: 'https://www.pinterest.com/',
             },
         ],

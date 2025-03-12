@@ -1,14 +1,17 @@
-import teamData from '@data/team-data';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import teamData from "@data/team-data";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const TeamSectionTwo = ({ teamBottomBorder }) => {
   return (
     <>
       <div className="fm-director-team-area team-softhalf-bg team__animation section-spacing fix">
         <div className="container">
-          <div className="row section-title-spacing wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            className="row section-title-spacing wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div className="col-xl-12">
               <div className="section-title text-center">
                 <span className="section-subtitle title-anim">
@@ -16,7 +19,7 @@ const TeamSectionTwo = ({ teamBottomBorder }) => {
                 </span>
                 <div>
                   <h2 className="section-main-title title-anim">
-                    Meet my Team
+                    MEET OUR TEAM
                   </h2>
                 </div>
               </div>
@@ -39,7 +42,7 @@ const TeamSectionTwo = ({ teamBottomBorder }) => {
                       style={{ width: "100%", height: "auto" }}
                       alt="img not found"
                     />
-                    <span className="fm-director-sign">Daniyel</span>
+                    <span className="fm-director-sign">Gaurav</span>
                   </Link>
                   <div className="fm-director-content">
                     <span className="fm-director-designation body-color">
@@ -71,11 +74,13 @@ const TeamSectionTwo = ({ teamBottomBorder }) => {
           </div>
         </div>
       </div>
-      {teamBottomBorder &&
+      {teamBottomBorder && (
         <div className="container">
           <div className="hr1"></div>
         </div>
-      }
+      )}
+
+     
     </>
   );
 };

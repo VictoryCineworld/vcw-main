@@ -2,12 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from '@assets/img/logo/logo.png'
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
 import Menus from "./menus";
 import OffCanvasMain from "@components/common/off-canvas";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const Header = ({HeaderWrapperClass}) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     // Sticky Menu Area start
 	useEffect(() => {
 		window.addEventListener('scroll', sticky);
@@ -23,6 +29,12 @@ const Header = ({HeaderWrapperClass}) => {
 	 };
 	 // Sticky Menu Area End
     const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
+    const router = useRouter();
+
+    const handleClick = () => {
+      // Navigate to the desired page (e.g., /new-page)
+      router.push('/contact');
+    };
     return (
         <>
        <header id="header-sticky" className={HeaderWrapperClass ? 
@@ -33,7 +45,7 @@ const Header = ({HeaderWrapperClass}) => {
             <div className="header-wrapper">
                <div className="fm-header-logo-wrapper">
                   <Link href="/" className="fm-header-logo">
-                     <Image  style={{width:'auto', height:'auto'}} src={Logo} alt="img not found"/>
+                     <Image  style={{width:'100px', height:'auto' , marginLeft:'30px'}} src={Logo} alt="img not found"/>
                   </Link>
                   <span className="separator d-none d-xl-block"></span>
                   <button className="fm-header-bar-1" onClick={() => setIsOffCanvasOpen(true)}>
@@ -49,13 +61,59 @@ const Header = ({HeaderWrapperClass}) => {
                      </nav>
                   </div>
                </div>
-               <div className="fm-header-right d-none d-xl-block">
-                  <Link href="/contact" className="fill-btn">{`Let's`} Chat
-                     <span>
-                        <i className="fa-regular fa-arrow-right"></i>
-                     </span>
-                  </Link>
-               </div>
+               <div>
+      {/* Enquire Now Button */}
+      <div className="fm-header-right d-none d-xl-block">
+        <button
+        onClick={handleClick}
+          className="fill-btn"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Enquire Now
+          <span>
+            <i className="fa-regular fa-arrow-right"></i>
+          </span>
+        </button>
+      </div>
+
+      {/* Modal */}
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">...</div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" className="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
             </div>
          </div>
       </div>
