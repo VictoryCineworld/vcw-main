@@ -8,7 +8,7 @@ const {
 const { default: FooterOne } = require("@layout/footers/footer-one");
 const { Header } = require("@layout/index");
 
-const CampaignContentCreation = () => {
+const Campaign = () => {
   const HeaderData = data.find((data) => data.type === "metadata");
   const portfolioData =
     data.find((item) => item.type === "Portfolio")?.data || [];
@@ -132,4 +132,4 @@ const CampaignContentCreation = () => {
   );
 };
 
-export default CampaignContentCreation;
+export default Campaign;

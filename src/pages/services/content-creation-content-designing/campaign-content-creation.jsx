@@ -2,7 +2,7 @@ import { data } from "@data/services/content-creation-content-designing/campaign
 import Image from "next/image";
 import "swiper/css/bundle";
 import Link from "next/link";
-import CampaignContentCreation from "@components/service/campaign-content-creation/ccc";
+import Campaign from "@components/service/campaign-content-creation/ccc/Campaign";
 const {
   default: Breadcrumb,
 } = require("@components/common/breadcrumb/breadcrumb");
@@ -28,7 +28,7 @@ const Index = () => {
         <Breadcrumb title={HeaderData.title} subTitle={HeaderData.breadcrumb} />
         <section className="case-details-area">
           <>
-            <CampaignContentCreation />
+            <Campaign />
           </>
 
           <div className="fm-faq-area section-spacing-bottom container">
