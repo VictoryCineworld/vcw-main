@@ -10,7 +10,7 @@ import SliderArrowLeft from "@assets/img/portfolio/slider-arrow-left.svg";
 import SliderArrowRight from "@assets/img/portfolio/slider-arrow-right.svg";
 const TestimonialSlider = () => {
   return (
-    <section className="bg-black section-spacing text-white">
+    <section className="bg-black section-spacing text-white ">
       <div className="container">
       <div className="col-12">
                   <div className="fm-director-sec-title text-center">

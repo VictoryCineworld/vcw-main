@@ -27,15 +27,139 @@ const menu_data = [
   {
     id: 10,
     hasDropdown: true,
+    megaMenu: true, // Enable mega menu
     title: "Services",
-    link: "/service",
-    submenus: [
-      { title: "Content Creation", link: "/content-creation" },
-      { title: "Video Production", link: "/video-production" },
-      { title: "Corporate Video", link: "/corporate-video" },
-      { title: "IT Services", link: "/it-services" },
-      { title: "Documentary", link: "/documentary" },
-      { title: "Digital Marketing", link: "/digital-marketing" },
+    link: "/services", // Updated from "/service" to "/services"
+    mega_menus: [
+      {
+        title: "Content Creation & Content Designing", // Ensured consistency in naming
+        link: "/services/content-creation-content-designing",
+        submenus: [
+          {
+            title: "Social Media Videos",
+            link: "/services/content-creation-content-designing/social-media-videos",
+          },
+          {
+            title: "Copywriting",
+            link: "/services/content-creation-content-designing/copy-writing",
+          },
+          {
+            title: "Script Writing",
+            link: "/services/content-creation-content-designing/script-writing",
+          },
+          {
+            title: "Campaign Content Creation",
+            link: "/services/content-creation-content-designing/campaign-content-creation", // Corrected endpoint
+          },
+        ],
+      },
+  
+      {
+        title: "Digital Marketing",
+        link: "/services/digital-marketing", // Updated to include "/services"
+        submenus: [
+          {
+            title: "SEO",
+            link: "/services/digital-marketing/seo",
+          },
+          {
+            title: "ASO",
+            link: "/services/digital-marketing/aso",
+          },
+          {
+            title: "Social Media Management",
+            link: "/services/digital-marketing/social-media-management",
+          },
+          {
+            title: "Influencer Marketing",
+            link: "/services/digital-marketing/influencer-marketing",
+          },
+          {
+            title: "Ads Marketing",
+            link: "/services/digital-marketing/ads-marketing", // Updated endpoint
+            submenus: [
+              {
+                title: "Google Ads (PPC)",
+                link: "/services/digital-marketing/ads-marketing/google-ads-ppc", // Updated endpoint
+              },
+              {
+                title: "Meta Ads",
+                link: "/services/digital-marketing/ads-marketing/meta-ads", // Updated endpoint
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "IT Services",
+        link: "/services/it-services", // Updated to include "/services"
+        submenus: [
+          {
+            title: "Web Design & Development",
+            link: "/services/it-services/web-design-development",
+          },
+          {
+            title: "Mobile App Development",
+            link: "/services/it-services/mobile-app-development",
+          },
+          {
+            title: "AI/ML",
+            link: "/services/it-services/ai-ml",
+          },
+        ],
+      },
+      {
+        title: "Video Production",
+        link: "/services/video-production", // Updated to include "/services"
+        submenus: [
+          {
+            title: "Video Production Services",
+            link: "/services/video-production/video-production-services", // Updated endpoint
+          },
+          {
+            title: "Post Production",
+            link: "/services/video-production/post-production",
+          },
+          {
+            title: "Product Shoot",
+            link: "/services/video-production/product-shoot",
+          },
+          {
+            title: "Video Editing",
+            link: "/services/video-production/video-editing", // Updated endpoint
+          },
+          {
+            title: "VFX/Animation Videos",
+            link: "/services/video-production/vfx-animation-videos", // Updated endpoint
+          },
+          {
+            title: "Color Grading/DI",
+            link: "/services/video-production/color-grading-di", // Updated endpoint
+          },
+        ],
+      },
+      {
+        title: "Informative Videos",
+        link: "/services/informative-videos", // Updated to include "/services"
+        submenus: [
+          {
+            title: "Documentary",
+            link: "/services/informative-videos/documentary",
+          },
+          {
+            title: "Corporate Video",
+            link: "/services/informative-videos/corporate-video",
+          },
+          {
+            title: "Educational Video",
+            link: "/services/informative-videos/educational-video",
+          },
+          {
+            title: "Project Video",
+            link: "/services/informative-videos/project-video",
+          },
+        ],
+      },
     ],
   },
   {

@@ -5,7 +5,7 @@ import React from 'react';
 
 const TeamSection = () => {
    return (
-      <div className="fm-director-team-area team__animation bg-common-black section-spacing fix">
+      <div className="fm-director-team-area team__animation bg-common-black section-spacing fix mt-sm-96">
          <div className="container">
             <div className="row wow fadeInUp" data-wow-delay="0.3s">
                <div className="col-xl-12">

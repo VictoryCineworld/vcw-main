@@ -8,7 +8,7 @@ const FooterOneCopyright = () => {
                <div className="footer-bottom-wrapper-2 ">
                   <div className="footer-bottom-inner">
                      <div className="footer-copyright">
-                        <p>© 2023<Link href="/"> Faime </Link> All Rights Reserved.</p>
+                        <p>© 2024<Link href="/"> Victory Cineworld </Link> All Rights Reserved.</p>
                      </div>
                      <div className="footer-rules ">
                         <Link href="/policy-privacy">Privacy Policy</Link>
