@@ -6,7 +6,6 @@ import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/por
 import ServiceMiddle from "@components/service-details/service-middle";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
 import { Header } from "@layout/index";
-import DMFAQs from "./DMFAQs";
 import FooterOne from "@layout/footers/footer-one";
 import VPFAQs from "./VPFAQs";
 
