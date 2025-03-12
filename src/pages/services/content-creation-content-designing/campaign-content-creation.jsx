@@ -2,7 +2,7 @@ import { data } from "@data/services/content-creation-content-designing/campaign
 import Image from "next/image";
 import "swiper/css/bundle";
 import Link from "next/link";
-import Campaign from "@components/service/campaign-content-creation/ccc/Campaign";
+import Campaign from "@components/sub-service/campaign-content-creation/ccc/Campaign";
 const {
   default: Breadcrumb,
 } = require("@components/common/breadcrumb/breadcrumb");

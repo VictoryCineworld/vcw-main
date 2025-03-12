@@ -1,7 +1,7 @@
 import SEO from '@components/seo';
 import { Wrapper } from '@layout/index';
 import React from 'react';
-import Services from '@components/service'
+import Services from '@components/sub-service'
 
 const index = () => {
     return (

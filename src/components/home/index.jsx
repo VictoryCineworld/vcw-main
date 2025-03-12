@@ -12,7 +12,7 @@ import ContactSection from '@components/common/contact/contact-area';
 import BrandAreaSection from '@components/elements/slider/brand-slider/brand-slider-one';
 import MovieSliderSeven from '@components/elements/slider/movie-slider/movie-slider-seven';
 import ClientSlider from '@components/elements/slider/brand-slider/client-slider';
-import TechSection from '@components/service/Tech';
+import TechSection from '@components/sub-service/Tech';
 
 const index = () => {
     return (
