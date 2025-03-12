@@ -6,7 +6,6 @@ import React from "react";
 import PricingSection from "./pricing-section";
 import ContactSection from "@components/common/contact/contact-area";
 import FooterOne from "@layout/footers/footer-one";
-import ContentCreation from "@components/content-creation/ContentCreation";
 
 const index = () => {
   return (
@@ -19,7 +18,7 @@ const index = () => {
         <PricingSection />
         <ContactSection />
         <Breadcrumb title="Content Creation" subTitle="Content Creation" />
-        <ContentCreation/>
+       
       </main>
       <FooterOne />
     </>
