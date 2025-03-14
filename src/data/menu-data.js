@@ -13,17 +13,17 @@ const menu_data = [
       { title: "Popular Movies", link: "/popular-movies" },
     ],
   },
-  {
-    id: 2,
-    hasDropdown: true,
-    title: "About",
-    link: "/movie",
-    submenus: [
-      { title: "Our Process", link: "/about" },
-      { title: "Team", link: "/team" },
-      { title: "Careers", link: "/terms-conditions" },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   hasDropdown: true,
+  //   title: "About",
+  //   link: "/movie",
+  //   submenus: [
+  //     { title: "Our Process", link: "/about" },
+  //     { title: "Team", link: "/team" },
+  //     { title: "Careers", link: "/terms-conditions" },
+  //   ],
+  // },
   {
     id: 10,
     hasDropdown: true,
@@ -162,17 +162,17 @@ const menu_data = [
       },
     ],
   },
-  {
-    id: 3,
-    hasDropdown: true,
-    title: "Portfolio",
-    link: "/portfolio-masonary",
-    submenus: [
-      { title: "Portfolio-Masonary", link: "/portfolio-masonary" },
-      { title: "Portfolio-Slider", link: "/portfolio-slider" },
-      { title: "Portfolio Details", link: "/portfolio-details" },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   hasDropdown: true,
+  //   title: "Portfolio",
+  //   link: "/portfolio-masonary",
+  //   submenus: [
+  //     { title: "Portfolio-Masonary", link: "/portfolio-masonary" },
+  //     { title: "Portfolio-Slider", link: "/portfolio-slider" },
+  //     { title: "Portfolio Details", link: "/portfolio-details" },
+  //   ],
+  // },
 
   {
     id: 4,
@@ -219,17 +219,17 @@ const menu_data = [
       // },
     ],
   },
-  {
-    id: 5,
-    hasDropdown: true,
-    title: "Blog",
-    link: "/blog",
-    submenus: [
-      { title: "Blog Standard", link: "/blog" },
-      { title: "Blog Wide", link: "/blog-wide" },
-      { title: "Blog Details", link: "/blog-details" },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   hasDropdown: true,
+  //   title: "Blog",
+  //   link: "/blog",
+  //   submenus: [
+  //     { title: "Blog Standard", link: "/blog" },
+  //     { title: "Blog Wide", link: "/blog-wide" },
+  //     { title: "Blog Details", link: "/blog-details" },
+  //   ],
+  // },
   {
     id: 6,
     hasDropdown: false,
