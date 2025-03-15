@@ -1,4 +1,4 @@
-import ProductShoot from "@components/sub-service/video-production/ps";
+import ColorGrading from "@components/sub-service/video-production/cg";
 import { data } from "@data/services/video-production/color-grading";
 import "swiper/css/bundle";
 
@@ -27,7 +27,7 @@ const Index = () => {
         <Breadcrumb title={HeaderData.title} subTitle={HeaderData.breadcrumb} />
         <section className="case-details-area">
           <>
-            <ProductShoot />
+            <ColorGrading />
           </>
 
           <div className="fm-faq-area section-spacing-bottom container">
