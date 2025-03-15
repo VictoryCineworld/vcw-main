@@ -8,11 +8,10 @@ import { PersistGate } from "redux-persist/integration/react";
 import { ToastContainer } from "react-toastify";
 import AppProvider from '../context/AppContext';
 import { persistStore } from "redux-persist";
-import SEO from '@components/seo';
 import Preloader from '@components/preloader';
 import { useEffect, useState } from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 
 let persistor = persistStore(store)
@@ -30,7 +29,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <SEO />
+ 
       <Provider store={store}>
         <PersistGate loading={<Preloader />} persistor={persistor}>
           <AppProvider>
