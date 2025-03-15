@@ -1,4 +1,3 @@
-import FaqSection from "@components/newService/Faq";
 import { faqs, steps } from "@data/services/digital-marketing";
 import Link from "next/link";
 import { newServiceData } from "@data/service-data";
