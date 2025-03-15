@@ -1,4 +1,4 @@
-import ProductShoot from "@components/sub-service/video-production/ps";
+import Vfx from "@components/sub-service/video-production/vfx";
 import { data } from "@data/services/video-production/vfx-data";
 import "swiper/css/bundle";
 
@@ -27,7 +27,7 @@ const Index = () => {
         <Breadcrumb title={HeaderData.title} subTitle={HeaderData.breadcrumb} />
         <section className="case-details-area">
           <>
-            <ProductShoot />
+            <Vfx />
           </>
 
           <div className="fm-faq-area section-spacing-bottom container">
