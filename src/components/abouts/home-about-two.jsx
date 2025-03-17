@@ -26,7 +26,7 @@ const AboutSectionTwo = () => {
                   <div className="col-xl-7 col-lg-9">
                      <div className="fm-about-wrapper section-spacing">
                         <div className="section-title">
-                           <span className="section-subtitle featured-sub-title title-anim wow fadeInUp" data-wow-delay="0.3s">About FAIME</span>
+                           <span className="section-subtitle featured-sub-title title-anim wow fadeInUp" data-wow-delay="0.3s">About VICTORYCINEWORLD</span>
                            <h2 className="section-main-title text-white mb-30 title-anim wow fadeInUp" data-wow-delay="0.4s">On-Demand Video
                               Production
                               Company </h2>

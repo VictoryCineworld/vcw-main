@@ -12,7 +12,7 @@ const BlogSectionThere = () => {
             <div className="blog-sec-wrapper">
               <div className="section-title">
                 <span className="section-subtitle title-anim">LATEST NEWS</span>
-                <h2 className="section-main-title blog-sec-title title-anim">Faime Latest Blog</h2>
+                <h2 className="section-main-title blog-sec-title title-anim">VictoryCineworld Latest Blog</h2>
               </div>
             </div>
           </div>

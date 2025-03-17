@@ -14,21 +14,21 @@ const testimonialData=[
         image:testimonialOne,
         author:'Rowan san',
         icon:<TestimonialIconOne/>,
-        description:'I Have Worked With Faime The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With Faime Was Easy.'
+        description:'I Have Worked With VictoryCineworld The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With VictoryCineworld Was Easy.'
     },
     {
         id:2,
         image:testimonialOne,
         author:'Ander son',
         icon:<TestimonialIconOne/>,
-        description:'I Have Worked With Faime The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With Faime Was Easy.'
+        description:'I Have Worked With VictoryCineworld The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With VictoryCineworld Was Easy.'
     },
     {
         id:3,
         image:testimonialOne,
         author:'Adam qual',
         icon:<TestimonialIconOne/>,
-        description:'I Have Worked With Faime The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With Faime Was Easy.'
+        description:'I Have Worked With VictoryCineworld The Past Couple Of Years And Have Purchased 10+ Videos. My Company Is All Across The US And Working With VictoryCineworld Was Easy.'
     },
     //home-4 data
     {

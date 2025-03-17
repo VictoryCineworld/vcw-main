@@ -46,7 +46,7 @@ const HomeAboutFour = () => {
               </div>
               <div className="fm-about-content-2">
                 <p>
-                  Faime Production Is A Full—Service Production House Based Out
+                  VictoryCineworld Is A Full—Service Production House Based Out
                   Of Indonesia And Singapore That Hosts A Thriving Roster Of
                   Directors{" "}
                 </p>

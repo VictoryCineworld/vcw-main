@@ -6,7 +6,6 @@ import MobileMenus from "./mobile-menus";
 
 const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   const handleSubmit = (e) => {
-   
     e.preventDefault();
   };
 
@@ -23,7 +22,7 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
               <Link href="#">
                 <Image
                   src={LogoImg}
-                  style={{width:'auto', height:'auto'}}
+                  style={{ width: "auto", height: "auto" }}
                   alt="img not found"
                 />
               </Link>
@@ -48,16 +47,16 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
           </div>
           <div className="mobile-menu mean-container d-xl-none">
-          <nav className="mean-nav">
-          <MobileMenus/>
-          </nav>
+            <nav className="mean-nav">
+              <MobileMenus />
+            </nav>
           </div>
           <div className="d-none d-sm-block">
             <div className="fm-offcanvas-about mt-30 mb-30">
-              <h4>About Faime</h4>
+              <h4>About VictoryCineworld</h4>
               <p>
-                We Believe Film And Moving Image Has The PowerTo Create
-                Significant Change.
+                We can film your project whether it is a commercial advertise, a
+                short film or a document film.
               </p>
             </div>
           </div>
@@ -76,9 +75,11 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 <div className="offcanvas-contact-text">
                   <Link
                     target="_blank"
-                    href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.225227463464!2d75.3229272!3d19.8727093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29f9084d585c7cb1%3A0x787577eb0bed6c83!2sVictory%20Cineworld!5e0!3m2!1sen!2sin!4v1737174197004!5m2!1sen!2sin"
                   >
-                    477-463 Broadway, NY 10013 Bournemouth
+                    Victory Cineworld, Tapdia Terrace, Adalat Rd, opposite
+                    District Court Road, Chh, Kotla Colony, Chhatrapati Sambhaji
+                    Nagar, Maharashtra 431001
                   </Link>
                 </div>
               </li>
@@ -89,7 +90,7 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   </Link>
                 </div>
                 <div className="offcanvas-contact-text">
-                  <Link href="tel:915550303420">+91 555 0303 420</Link>
+                  <Link href="tel:(+91) 968 989 6355">(+91) 968 989 6355</Link>
                 </div>
               </li>
               <li className="d-flex align-items-center gap-2">
@@ -99,8 +100,8 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   </Link>
                 </div>
                 <div className="offcanvas-contact-text">
-                  <Link href="mailto:hello@faimemedia.com">
-                    hello@faimemedia.com
+                  <Link href="mailto:hello@victorycineworld.com">
+                    hello@victorycineworld.com
                   </Link>
                 </div>
               </li>
@@ -110,17 +111,26 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="fm-offcanvas-social">
               <span className="social-text">Follow :</span>
               <div className="fm-offcanvas-social-icon">
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61568906940789&mibextid=ZbWKwL"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-facebook-f"></i>
                 </Link>
-                <Link href="https://twitter.com/" target="_blank">
-                  <i className="fa-brands fa-twitter"></i>
+                <Link href="https://www.behance.net/victory15" target="_blank">
+                  <i className="fa-brands fa-behance"></i>
                 </Link>
-                <Link href="https://www.instagram.com/" target="_blank">
+                <Link
+                  href="https://www.instagram.com/victory_cineworld/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-instagram"></i>
                 </Link>
-                <Link href="https://www.pinterest.com/" target="_blank">
-                  <i className="fa-brands fa-pinterest-p"></i>
+                <Link
+                  href="https://www.linkedin.com/company/victorycineworld/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
               </div>
             </div>

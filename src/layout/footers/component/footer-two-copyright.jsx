@@ -9,7 +9,7 @@ FooterTwoCopyRight = () => {
            <div className="footer-bottom-wrapper">
               <div className="footer-bottom-inner">
                  <div className="footer-copyright ">
-                    <p>© 2023<Link className="color-theme-1" href="/"> Faime </Link> All Rights Reserved.</p>
+                    <p>© 2023<Link className="color-theme-1" href="/"> VictoryCineworld </Link> All Rights Reserved.</p>
                  </div>
                  <div className="footer-rules ">
                  <Link href="/policy-privacy">Privacy Policy</Link>

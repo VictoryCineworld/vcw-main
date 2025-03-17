@@ -8,7 +8,7 @@ const index = () => {
     const item = blogData[0]
     return (
         <Wrapper>
-            <SEO pageTitle='Faime'/>
+            <SEO pageTitle='VictoryCineworld'/>
             <BlogDetailsPage item={item}/>
         </Wrapper>
     );

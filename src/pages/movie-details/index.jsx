@@ -8,7 +8,7 @@ const index = () => {
     const item = movieData[0]
     return (
         <Wrapper>
-            <SEO pageTitle='Faime'/>
+            <SEO pageTitle='VictoryCineworld'/>
             <MovieDetailsPage/>
         </Wrapper>
     );

@@ -8,7 +8,7 @@ const index = () => {
     const item = PortfolioData[0]
     return (
         <Wrapper>
-            <SEO pageTitle='Faime'/>
+            <SEO pageTitle='VictoryCineworld'/>
             <PortfolioDetailsPage item={item}/>
         </Wrapper>
     );

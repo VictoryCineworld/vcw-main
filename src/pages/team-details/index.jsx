@@ -9,7 +9,7 @@ const index = () => {
     const item = teamData[0]
     return (
         <Wrapper>
-            <SEO pageTitle="Faime"/>
+            <SEO pageTitle="VictoryCineworld"/>
             <TeamDetailsPage item={item}/>
         </Wrapper>
     );

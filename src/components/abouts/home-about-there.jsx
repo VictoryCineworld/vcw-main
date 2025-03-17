@@ -9,7 +9,7 @@ const HomeAboutThere = () => {
             <div className="row g-5 section-title-spacing">
                <div className="col-xl-6 col-lg-4 wow fmSlideInLeft" data-wow-delay="0.3s">
                   <div className="about-sub">
-                     <span className="section-subtitle title-anim mb-0">ABOUT FAIME</span>
+                     <span className="section-subtitle title-anim mb-0">ABOUT VICTORYCINEWORLD</span>
                   </div>
 
                </div>
@@ -18,7 +18,7 @@ const HomeAboutThere = () => {
                      <h2 className="section-main-title about-main-title title-anim">On-Demand Video <br />
                         Production Company</h2>
                      <div className="section-text about-text">
-                        <p>Faime Production Is A Full—Service Production House Based Out Indonesia And Singapore That
+                        <p>VictoryCineworld Is A Full—Service Production House Based Out Indonesia And Singapore That
                            Hosts A Thriving Roster Of Directors Working Across A Range Of Artistic Disciplines.</p>
                      </div>
                   </div>

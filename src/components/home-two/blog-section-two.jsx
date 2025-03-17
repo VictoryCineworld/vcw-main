@@ -15,7 +15,7 @@ const BlogSectionTwo = () => {
                   LATEST NEWS
                 </span>
                 <h2 className="section-main-title title-anim text-white">
-                  Faime Latest Blog
+                  VictoryCineworld Latest Blog
                 </h2>
               </div>
             </div>

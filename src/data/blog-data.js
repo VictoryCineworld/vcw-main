@@ -181,7 +181,7 @@ const blogData = [
   {
     id: 18,
     image: blogWideImgThere,
-    title: 'New Perspectiveson a Faime Legend theory',
+    title: 'New Perspectiveson a VictoryCineworld Legend theory',
     subTitle: 'Trailer',
     date: "10/02/2019",
     author: 'By Richard',

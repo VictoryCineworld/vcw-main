@@ -21,7 +21,7 @@ const HeroThere = () => {
                     <div className="fm-hero-section-title">
                        <span className="fm-hero-subtitle ">BEST WEB SERIES 2023</span>
                        <h1 className="fm-hero-main-title text-white hero__title-6">
-                          <span className="title-left">FAIME</span>
+                          <span className="title-left">VICTORYCINEWORLD</span>
                           <span className="spc-text title-right">GAME</span>
                        </h1>
                     </div>

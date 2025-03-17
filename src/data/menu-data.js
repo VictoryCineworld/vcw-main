@@ -29,7 +29,7 @@ const menu_data = [
     hasDropdown: true,
     megaMenu: true, // Enable mega menu
     title: "Services",
-    link: "/services", // Updated from "/service" to "/services"
+    link: "/services/content-creation-content-designing/social-media-videos", // Updated from "/service" to "/services"
     mega_menus: [
       {
         title: "Content Creation & Content Designing", // Ensured consistency in naming
