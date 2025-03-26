@@ -13,17 +13,17 @@ const menu_data = [
       { title: "Popular Movies", link: "/popular-movies" },
     ],
   },
-  // {
-  //   id: 2,
-  //   hasDropdown: true,
-  //   title: "About",
-  //   link: "/movie",
-  //   submenus: [
-  //     { title: "Our Process", link: "/about" },
-  //     { title: "Team", link: "/team" },
-  //     { title: "Careers", link: "/terms-conditions" },
-  //   ],
-  // },
+  {
+    id: 2,
+    hasDropdown: true,
+    title: "About",
+    link: "/movie",
+    submenus: [
+      { title: "Our Process", link: "/about" },
+      { title: "Team", link: "/team" },
+      { title: "Careers", link: "/terms-conditions" },
+    ],
+  },
   {
     id: 10,
     hasDropdown: true,

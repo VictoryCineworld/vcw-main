@@ -9,7 +9,7 @@ import bgImageThere from "@assets/img/slider/dm-3.webp";
 import bgFour from "@assets/img/slider/ItServices.jpg";
 // import bgFive from "@assets/img/slider/it-1.avif";
 //bg-img-home-four
-import bgImageFour from "@assets/img/slider/it-2.jpg";
+import bgImageFour from "@assets/img/slider/it-4.jpg";
 import bgImageFive from "@assets/img/slider/home-5/slider-4.jpg";
 import bgImageSix from "@assets/img/slider/fp-2.jpg";
 import bgImageSeven from "@assets/img/slider/home-5/slider-3.jpg";
