@@ -99,8 +99,8 @@ const footerData = {
             //home-two-data
             {
                 id: 4,
-                contactInfo: 'mailto:hello@faimemedia.com',
-                contact: 'hello@faimemedia.com',
+                contactInfo: 'mailto:hello@victorycineworld.com',
+                contact: 'hello@victorycineworld.com',
                 contactClass:'contact-mail',
                 addressWrapperClass:'fm-contact-mail',
                 contactTimeClass:'fm-contact-hours',

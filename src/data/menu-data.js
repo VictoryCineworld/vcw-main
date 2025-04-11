@@ -162,17 +162,17 @@ const menu_data = [
       },
     ],
   },
-  // {
-  //   id: 3,
-  //   hasDropdown: true,
-  //   title: "Portfolio",
-  //   link: "/portfolio-masonary",
-  //   submenus: [
-  //     { title: "Portfolio-Masonary", link: "/portfolio-masonary" },
-  //     { title: "Portfolio-Slider", link: "/portfolio-slider" },
-  //     { title: "Portfolio Details", link: "/portfolio-details" },
-  //   ],
-  // },
+  {
+    id: 3,
+    hasDropdown: false,
+    title: "Portfolio",
+    link: "/portfolio-masonary",
+    // submenus: [
+    //   { title: "Portfolio-Masonary", link: "/portfolio-masonary" },
+    //   { title: "Portfolio-Slider", link: "/portfolio-slider" },
+    //   { title: "Portfolio Details", link: "/portfolio-details" },
+    // ],
+  },
 
   {
     id: 4,
@@ -183,8 +183,7 @@ const menu_data = [
     pages: false,
     mega_menus: [
       // {
-      //   title: "Page Layout 1",
-      //   link: "#",
+      //   title: "Page Layout 1",  
       //   submenus: [
       //     { title: "About us", link: "/about" },
       //     { title: "Service", link: "/service" },
