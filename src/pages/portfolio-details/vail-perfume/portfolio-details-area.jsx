@@ -4,7 +4,7 @@ import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/por
 import MiddleSection from "./middle-section";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
 
-const PortfolioDetailsArea = ({ item }) => {
+const VailPortfolioDetailsArea = ({ item }) => {
   return (
     <section className="case-details-area">
       <div className="container">
@@ -125,4 +125,4 @@ const PortfolioDetailsArea = ({ item }) => {
   );
 };
 
-export default PortfolioDetailsArea;
+export default VailPortfolioDetailsArea;
