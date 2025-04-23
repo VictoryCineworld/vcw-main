@@ -4,49 +4,151 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Local data array
+// Local data array with custom URLs
 const PortfolioData = [
   {
     id: 1,
-    title: "Mountain Adventure",
-    image: "/assets/img/bg/banner3.jpg",
+    title: "Amigos Kitchen",
+    image: "/assets/img/brand/amigos-2.jpg",
     date: "April 2025",
     description: "A thrilling escape into the wild peaks.",
+    url: "/portfolio-details/amigos-kitchen", // 👈 Add your unique URL here
   },
   {
     id: 2,
-    title: "Desert Safari",
-    image: "/assets/img/bg/banner4.jpg",
+    title: "Annujj's Vail Perfume",
+    image: "/assets/img/brand/vail-2.jpg",
     date: "March 2025",
     description: "Ride through the golden dunes under the sun.",
+    url: "/portfolio-details/vail-perfume",
   },
   {
     id: 3,
-    title: "City Lights",
-    image: "/assets/img/bg/banner5.jpg",
+    title: "Arihant Honda",
+    image: "/assets/img/brand/honda-1.jpg",
     date: "February 2025",
     description: "Urban exploration of skyline views.",
+    url: "/portfolio-details/city-lights",
   },
   {
     id: 4,
-    title: "Island Hopping",
+    title: "Astrologer Ashok Pagaria",
     image: "/assets/img/bg/banner6.jpg",
     date: "January 2025",
     description: "Experience tropical bliss across isles.",
+    url: "/portfolio-details/island-hopping",
   },
   {
     id: 5,
-    title: "Winter Wonderland",
+    title: "Aura Ability Unfold",
     image: "/assets/img/bg/banner7.png",
     date: "December 2024",
     description: "Snow-covered landscapes and cozy vibes.",
+    url: "/portfolio-details/winter-wonderland",
   },
   {
     id: 6,
-    title: "Cultural Journey",
+    title: "Dr Prashant Chawan",
     image: "/assets/img/bg/banner4.jpg",
     date: "November 2024",
     description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 7,
+    title: "Dr Roshni Totla",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 8,
+    title: "Dr Umesh Mundada",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 9,
+    title: "Dr Yogesh's Healing Center",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 10,
+    title: "E-Tender Guru",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 11,
+    title: "Ganesh Jadhav",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 12,
+    title: "Intellify Health Podcast",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 13,
+    title: "Krishma",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 14,
+    title: "Lokmat - Vidhya Aradhana",
+    image: "/assets/img/bg/banner4.jspg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 15,
+    title: "Shetal Bhakharey",
+    image: "/assets/img/bg/banner4.jspg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 16,
+    title: "Ujwalatai Pawar CBSE School",
+    image: "/assets/img/bg/banner4.jspg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 17,
+    title: "Walmi Podcast",
+    image: "/assets/img/bg/banner4.jspg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
+  },
+  {
+    id: 18,
+    title: "Yalla Yalla",
+    image: "/assets/img/bg/banner4.jspg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/cultural-journey",
   },
 ];
 
@@ -74,7 +176,7 @@ const PortfolioMasonaryArea = () => {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <Link href={`/portfolio-details/${item.id}`} className="text-decoration-none">
+            <Link href={item.url} className="text-decoration-none">
               <div className="card h-100 custom-card shadow-lg border-0 rounded-4 hover-lift">
                 <Image
                   src={item.image}

@@ -1,9 +1,8 @@
 import React from "react";
 import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/portfolio-slider-two";
-import GallarySection from "./gallary";
-import FaqSection from "./faq-section";
+
 import MiddleSection from "./middle-section";
-import CaseSubtitleIcon from "@svg/case-subtitle-icon";
+// import CaseSubtitleIcon from "@svg/case-subtitle-icon";
 
 const PortfolioDetailsArea = ({ item }) => {
   return (
@@ -14,13 +13,14 @@ const PortfolioDetailsArea = ({ item }) => {
         </div>
       </div>
       <PortfolioSliderTwo />
-      <div className="container section-spacing-bottom wow fadeInUp" data-wow-delay="0.3s">
+      <div
+        className="container section-spacing-bottom wow fadeInUp"
+        data-wow-delay="0.3s"
+      >
         <div className="row">
           <div className="col-xxl-12 ">
             <h4 className="case-subtitle mb-25">
-              <span>
-                <CaseSubtitleIcon />
-              </span>
+              <span>{/* <CaseSubtitleIcon /> */}</span>
               Objective
             </h4>
             <p className="mb-55 ">
@@ -43,8 +43,8 @@ const PortfolioDetailsArea = ({ item }) => {
               present Ali’s story in an immersive way in order to connect with
               his audience and express his love for storytelling and typography.
             </p>
-            <FaqSection />
-            <GallarySection />
+            {/* <FaqSection /> */}
+            {/* <GallarySection /> */}
             <div className="text-latout">
               <p className="mb-55 ">
                 One of the largest food retailers needed to automate inspection
