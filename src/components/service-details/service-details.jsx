@@ -1,4 +1,4 @@
-// import FaqSection from "@components/portfolo-details-page/faq-section";
+import FaqSection from "@components/portfolo-details-page/faq-section";
 import GallarySection from "@components/portfolo-details-page/gallary";
 import React from "react";
 import StepAreaSection from "./step-area-section";
@@ -46,7 +46,7 @@ const ServiceDetails = () => {
             </p>
 
             <StepAreaSection />
-            {/* <FaqSection /> */}
+            <FaqSection />
             <GallarySection />
 
             <div className="text-latout">
