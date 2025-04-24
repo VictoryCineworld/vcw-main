@@ -24,85 +24,78 @@ const ArihantPortfolioDetailsArea = ({ item }) => {
                 {" "}
                 <CaseSubtitleIcon />{" "}
               </span>
-              Service Package Delivered
+              Execution & Strategy Our team crafted a multi-layered content
+              strategy tailored to the dealership’s target audience. The
+              approach included:
             </h4>
-            <p className="mb-35">
-              {" "}
-              We offered a tailored monthly Instagram package including:
-            </p>
-            <h5 className="mb-10">Instagram Reels Production:</h5>
+
+            <h5 className="mb-10">Informative Bike Model Videos::</h5>
             <p className="pl-30 mb-10">
-              - Concept-driven storytelling through cinematic reels.
-            </p>
-            <p className="pl-30 mb-10">
-              - Highlighting product aesthetics, lifestyle integration, and
-              luxury positioning.
-            </p>
-            <p className="pl-30 mb-10">
-              - Included product unboxing, perfume application moments,
-              fragrance mood reels, and seasonal themes.
+              - Created explainer reels for each Honda bike model.
             </p>
             <p className="pl-30 mb-30">
-              -<span className="font-bold"> Informative Character Reels:</span>{" "}
-              We created single-character informative reels featuring the
-              founder, Annujj himself, where he explained different types of
-              perfumes, usage tips, and customer-focused insights to build trust
-              and authority.
+              - Highlighted key features, performance, and use-case scenarios.
             </p>
 
             <p>
-              <h5 className="mb-10">Creative Direction:</h5>
+              <h5 className="mb-20">Bike Servicing Explainers: :</h5>
+              <p className="mb-10"> Educational videos on topics such as:</p>
+              <p className="pl-30 mb-10">- Engine oil types</p>
+              <p className="pl-30 mb-10">- Genuine spare parts</p>
               <p className="pl-30 mb-10">
-                - High-end visual treatment with elegant lighting and backdrops.
+                - Importance of color code matching in service
+              </p>
+              <p className="pl-30 mb-10">
+                - Insurance and maintenance best practices
+              </p>
+              <p className="pl-30 mb-10">- Pricing transparency in servicing</p>
+
+              <h5 className="mb-10">Model Comparison Videos: :</h5>
+              <p className="pl-30 mb-10">
+                - Created comparative videos (e.g., Activa Old 125 vs. New 125).
               </p>
               <p className="pl-30 mb-30">
-                - On-brand color grading and slow-motion shots to emphasize
-                richness.
+                - Collaborated with local influencers for unbiased perspectives.
               </p>
 
-              <h5 className="mb-10">Product Shoots: :</h5>
+              <h5 className="mb-10">Customer Experience Videos:</h5>
               <p className="pl-30 mb-10">
-                - Dedicated shoots for perfume bottles, packaging, and lifestyle
-                shots.
+                - Captured real-time delivery moments and client testimonials.
               </p>
               <p className="pl-30 mb-30">
-                - Macro shots to highlight details and craftsmanship.
+                - Built trust through authentic, relatable storytelling.
               </p>
 
-              <h5 className="mb-10">Post-Production Excellence:</h5>
+              <h5 className="mb-10">Google Review Reels:</h5>
               <p className="pl-30 mb-10">
-                - Clean edits, captivating transitions, audio enhancement.
+                - Designed carousels and video reels highlighting positive
+                customer reviews.
               </p>
               <p className="pl-30 mb-30">
-                - Delivered optimized formats for Instagram reels and stories.
+                - Encouraged more customers to leave reviews through visual
+                incentives.
               </p>
 
-              <h5 className="mb-10">Digital Marketing Services:</h5>
+              <h5 className="mb-10">WhatsApp Automation Feature Video: </h5>
               <p className="pl-30 mb-10">
-                - Strategized and executed paid Instagram promotions.
+                - Explained how customers can interact with the dealership
+                through WhatsApp automation.
               </p>
-              <p className="pl-30 mb-10">
-                - Audience targeting to drive relevant traffic to the website.
-              </p>
-              <p className="pl-30 mb-10">
-                - Focused on increasing sales conversions and brand visibility.
+              <p className="pl-30 mb-30">
+                - Planned influencer involvement to demonstrate usage.
               </p>
 
               <h5 className="mb-10">Results & Impact :</h5>
               <p className="pl-30 mb-10">
-                - Strong visual identity established on Instagram.
+                - Substantial increase in Instagram engagement and video reach.
               </p>
               <p className="pl-30 mb-10">
-                - Boosted credibility among fragrance buyers.
+                - More inquiries received through direct messages and WhatsApp.{" "}
               </p>
-              <p className="pl-30 mb-10">
-                - Enhanced engagement on reels through aesthetic and informative
-                content.
-              </p>
-              <p className="pl-30 mb-55">
-                - Drove targeted traffic to the e-commerce website, resulting in
-                increased inquiries and sales.
-              </p>
+            </p>
+            <p>- Improved customer trust and dealership transparency.</p>
+            <p className="mb-30">
+              - Positive feedback from both new buyers and existing customers.
             </p>
             {/* <FaqSection /> */}
             {/* <GallarySection /> */}

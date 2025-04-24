@@ -28,7 +28,7 @@ const PortfolioData = [
     image: "/assets/img/brand/honda-1.jpg",
     date: "February 2025",
     description: "Urban exploration of skyline views.",
-    url: "/portfolio-details/city-lights",
+    url: "/portfolio-details/arihant-honda",
   },
   {
     id: 4,

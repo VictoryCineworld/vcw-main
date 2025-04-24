@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
-import img from "@assets/img/brand/vail.png";
+import img from "@assets/img/brand/honda-2.jpg";
 
 const MiddleSection = ({ item }) => {
   return (
@@ -9,7 +9,7 @@ const MiddleSection = ({ item }) => {
       <div className="case-meta-wrapper">
         <div className="case-meta-item">
           <p>
-            <strong>Client : </strong>Annujj's Vail Perfume
+            <strong>Client : </strong>Honda
           </p>
         </div>
         <div className="case-meta-item">
@@ -20,7 +20,7 @@ const MiddleSection = ({ item }) => {
         </div>
         <div className="case-meta-item">
           <p>
-            <strong>Industry : </strong>Cosmetics
+            <strong>Industry : </strong>Automobile
           </p>
         </div>
         <div className="case-meta-item">
@@ -54,16 +54,16 @@ const MiddleSection = ({ item }) => {
         <span>
           <CaseSubtitleIcon />
         </span>
-        Case Study: Instagram Content Creation for Vail Perfume
+        Case Study: Digital Content Campaign for Honda Bike Dealership,
+        Aurangabad
       </h4>
       <h5>Client Overview </h5>
       <p className="mb-55" style={{ textAlign: "justify" }}>
-        Vail Perfume is an emerging perfume reseller brand founded by
-        entrepreneur Annujj, who runs his own e-commerce website specializing in
-        high-quality fragrances. With a vision to position Vail Perfume among
-        top-tier fragrance sellers in India, the goal was to establish a premium
-        and engaging presence on Instagram to drive awareness, engagement, and
-        ultimately sales.
+        Honda Bike Dealership, based in Aurangabad, is a prominent name in the
+        two-wheeler automotive sector, offering a wide range of Honda
+        motorcycles and scooters. With a focus on customer service and brand
+        trust, the dealership wanted to build a strong digital footprint to
+        connect with the younger generation and tech-savvy buyers.
       </p>
 
       <h4 className="case-subtitle mb-15">
@@ -73,10 +73,18 @@ const MiddleSection = ({ item }) => {
         Project Scope & Objectives
       </h4>
       <p className="mb-10 " style={{ textAlign: "justify" }}>
-        Victory Cineworld partnered with Vail Perfume to elevate its digital
-        presence by crafting visually rich, high-end content tailored for
-        Instagram. The focus was to showcase the brand's elegance, uniqueness,
-        and product value.
+        Victory Cineworld was entrusted with the task of building an
+        informative, engaging, and value-driven content strategy for the
+        dealership’s Instagram presence. The primary goals were:
+      </p>
+      <p className="mb-10">
+        - Increase showroom footfall and test drive inquiries.
+      </p>
+      <p className="mb-10">- Educate potential buyers about different bike models.
+      </p>
+      <p className="mb-10">- Build trust by showcasing service transparency.
+      </p>
+      <p className="mb-10">- Improve brand visibility through customer stories and interactive content.
       </p>
     </div>
   );
