@@ -33,10 +33,10 @@ const PortfolioData = [
   {
     id: 4,
     title: "Astrologer Ashok Pagaria",
-    image: "/assets/img/bg/banner6.jpg",
+    image: "/assets/img/brand/astrology-1.jpg",
     date: "January 2025",
     description: "Experience tropical bliss across isles.",
-    url: "/portfolio-details/island-hopping",
+    url: "/portfolio-details/astrology",
   },
   {
     id: 5,

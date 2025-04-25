@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/portfolio-slider-two";
+// import PortfolioSliderTwo from "@components/elements/slider/portfolio-slider/portfolio-slider-two";
 
 import MiddleSection from "./middle-section";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
@@ -12,7 +12,7 @@ const VailPortfolioDetailsArea = ({ item }) => {
           <MiddleSection item={item} />
         </div>
       </div>
-      <PortfolioSliderTwo />
+      {/* <PortfolioSliderTwo /> */}
       <div
         className="container section-spacing-bottom wow fadeInUp"
         data-wow-delay="0.3s"
