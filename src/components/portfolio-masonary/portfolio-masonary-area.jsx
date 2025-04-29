@@ -38,14 +38,14 @@ const PortfolioData = [
     description: "Experience tropical bliss across isles.",
     url: "/portfolio-details/astrology",
   },
-  // {
-  //   id: 5,
-  //   title: "Aura Ability Unfold",
-  //   image: "/assets/img/bg/banner7.png",
-  //   date: "December 2024",
-  //   description: "Snow-covered landscapes and cozy vibes.",
-  //   url: "/portfolio-details/winter-wonderland",
-  // },
+  {
+    id: 5,
+    title: "Aura Ability Unfold",
+    image: "/assets/img/brand/aura_ability.png",
+    date: "December 2024",
+    description: "Snow-covered landscapes and cozy vibes.",
+    url: "/portfolio-details/aura-ability-unfold",
+  },
   // {
   //   id: 6,
   //   title: "Dr Prashant Chawan",
