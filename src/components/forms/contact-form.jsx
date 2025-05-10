@@ -1,81 +1,180 @@
-import React from "react";
-import { useFormik } from "formik";
-// internal
-import { contact_schema } from "@utils/validation-schema";
-import ErrorMsg from "./error-msg";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
-  // use formik
-  const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
-    useFormik({
-      initialValues: {
-        name: "",
-        email: "",
-        subject: "",
-        msg: "",
-      },
+  const form = useRef();
+  const [errors, setErrors] = useState({});
 
-      validationSchema: contact_schema,
-      onSubmit: (values, { resetForm }) => {
-        console.log(values);
-        resetForm();
-      },
-    });
+  const validateForm = () => {
+    const formElements = form.current.elements;
+    const errors = {};
+    let isValid = true;
+
+    if (!formElements.name.value.trim()) {
+      errors.name = 'Name is required';
+      isValid = false;
+    }
+
+    if (!formElements.email.value.trim()) {
+      errors.email = 'Email is required';
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formElements.email.value)) {
+      errors.email = 'Email address is invalid';
+      isValid = false;
+    }
+
+    if (!formElements.subject.value.trim()) {
+      errors.subject = 'Subject is required';
+      isValid = false;
+    }
+
+    if (!formElements.message.value.trim()) {
+      errors.message = 'Message is required';
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        'service_kx5b6da', // Replace with your EmailJS service ID
+        'template_r7mj0m8', // Replace with your EmailJS template ID
+        form.current,
+        {
+          publicKey: 'N8Bl8qdbihPTkUsez', // Replace with your EmailJS public key
+        }
+      )
+      .then(
+        () => {
+          toast.success('Message sent successfully!', {
+            position: 'top-right',
+            autoClose: 1000, // 1 second
+          });
+          form.current.reset();
+          setErrors({});
+        },
+        () => {
+          toast.error('Failed to send message. Try again later.', {
+            position: 'top-right',
+            autoClose: 1000, // 1 second
+          });
+        }
+      );
+  };
 
   return (
-    <form id="contact-form" onSubmit={handleSubmit}>
-      <div className="row">
-        <div className="col-xl-6 col-lg-6">
-          <input
-            name="name"
-            value={values.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            type="text"
-            placeholder="Enter your name"
-            id="name"
-          />
-          {touched.name && <ErrorMsg error={errors.name} />}
+    <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+      <div style={{ width: '100%', maxWidth: '1240px', display: 'flex' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', padding: '20px' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: '600' }}>Let’s Connect</h2>
+          <p style={{ fontSize: '1rem', marginTop: '10px' }}>
+            Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
+          </p>
+          <form ref={form} onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ width: '48%', marginBottom: '15px' }}>
+                <input
+                  style={{
+                    width: '100%',
+                    padding: '10px',
+                    border: errors.name ? '1px solid red' : '1px solid #ccc',
+                    borderRadius: '5px',
+                  }}
+                  placeholder="Name"
+                  name="name"
+                  aria-describedby="name-error"
+                />
+                {errors.name && (
+                  <p id="name-error" style={{ color: 'red', fontSize: '0.875rem' }}>
+                    {errors.name}
+                  </p>
+                )}
+              </div>
+              <div style={{ width: '48%', marginBottom: '15px' }}>
+                <input
+                  style={{
+                    width: '100%',
+                    padding: '10px',
+                    border: errors.email ? '1px solid red' : '1px solid #ccc',
+                    borderRadius: '5px',
+                  }}
+                  placeholder="Email"
+                  name="email"
+                  aria-describedby="email-error"
+                />
+                {errors.email && (
+                  <p id="email-error" style={{ color: 'red', fontSize: '0.875rem' }}>
+                    {errors.email}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div style={{ marginBottom: '15px' }}>
+              <input
+                style={{
+                  width: '100%',
+                  padding: '10px',
+                  border: errors.subject ? '1px solid red' : '1px solid #ccc',
+                  borderRadius: '5px',
+                }}
+                placeholder="Subject"
+                name="subject"
+                aria-describedby="subject-error"
+              />
+              {errors.subject && (
+                <p id="subject-error" style={{ color: 'red', fontSize: '0.875rem' }}>
+                  {errors.subject}
+                </p>
+              )}
+            </div>
+            <div style={{ marginBottom: '15px' }}>
+              <textarea
+                rows="4"
+                style={{
+                  width: '100%',
+                  padding: '10px',
+                  border: errors.message ? '1px solid red' : '1px solid #ccc',
+                  borderRadius: '5px',
+                }}
+                placeholder="Message"
+                name="message"
+                aria-describedby="message-error"
+              ></textarea>
+              {errors.message && (
+                <p id="message-error" style={{ color: 'red', fontSize: '0.875rem' }}>
+                  {errors.message}
+                </p>
+              )}
+            </div>
+            <input
+              type="submit"
+              style={{
+                backgroundColor: '#007BFF',
+                color: '#fff',
+                padding: '10px',
+                border: 'none',
+                borderRadius: '5px',
+                fontSize: '1rem',
+                cursor: 'pointer',
+              }}
+              value="Send"
+            />
+          </form>
         </div>
-        <div className="col-xl-6 col-lg-6">
-          <input
-            name="email"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            type="email"
-            placeholder="Enter your email"
-            id="email"
-          />
-          {touched.email && <ErrorMsg error={errors.email} />}
-        </div>
       </div>
-      <div className="col-xl-12">
-        <input
-          type="text"
-          placeholder="Subject"
-          onChange={handleChange}
-          onBlur={handleBlur}
-          value={values.subject}
-          id="text"
-          name="subject"
-        />
-      </div>
-      <div className="col-xl-12">
-        <textarea
-          name="msg"
-          value={values.msg}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          id="msg"
-          placeholder="Type your message..."
-        ></textarea>
-        {touched.msg && <ErrorMsg error={errors.msg} />}
-      </div>
-      <div className="col-xl-12">
-        <button type="submit">Send Message</button>
-      </div>
-    </form>
+      <ToastContainer />
+    </div>
   );
 };
 

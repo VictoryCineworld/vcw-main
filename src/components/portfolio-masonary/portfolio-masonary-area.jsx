@@ -46,14 +46,14 @@ const PortfolioData = [
     description: "Snow-covered landscapes and cozy vibes.",
     url: "/portfolio-details/aura-ability-unfold",
   },
-  // {
-  //   id: 6,
-  //   title: "Dr Prashant Chawan",
-  //   image: "/assets/img/bg/banner4.jpg",
-  //   date: "November 2024",
-  //   description: "Dive into traditions and heritage.",
-  //   url: "/portfolio-details/cultural-journey",
-  // },
+  {
+    id: 6,
+    title: "Dr Prashant Chawan",
+    image: "/assets/img/bg/banner4.jpg",
+    date: "November 2024",
+    description: "Dive into traditions and heritage.",
+    url: "/portfolio-details/dr-prashant",
+  },
   // {
   //   id: 7,
   //   title: "Dr Roshni Totla",
