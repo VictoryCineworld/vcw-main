@@ -60,7 +60,7 @@ const PortfolioData = [
     image: "/assets/img/brand/Roshni-2.png",
     date: "November 2024",
     description: "Dive into traditions and heritage.",
-    url: "/portfolio-details/cultural-journey",
+    url: "/portfolio-details/roshni-totla",
   },
   {
     id: 8,

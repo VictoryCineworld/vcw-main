@@ -78,9 +78,7 @@ const ContactForm = () => {
       <div style={{ width: '100%', maxWidth: '1240px', display: 'flex' }}>
         <div style={{ display: 'flex', flexDirection: 'column', padding: '20px' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: '600' }}>Let’s Connect</h2>
-          <p style={{ fontSize: '1rem', marginTop: '10px' }}>
-            Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
-          </p>
+       
           <form ref={form} onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div style={{ width: '48%', marginBottom: '15px' }}>
@@ -160,12 +158,12 @@ const ContactForm = () => {
             <input
               type="submit"
               style={{
-                backgroundColor: '#007BFF',
-                color: '#fff',
-                padding: '10px',
+                backgroundColor: '#DDBE7B',
+                color: '',
+                padding: '0px',
                 border: 'none',
                 borderRadius: '5px',
-                fontSize: '1rem',
+                fontSize: '2rem',
                 cursor: 'pointer',
               }}
               value="Send"
