@@ -68,7 +68,7 @@ const PortfolioData = [
     image: "/assets/img/brand/Umesh-1.png",
     date: "November 2024",
     description: "Dive into traditions and heritage.",
-    url: "/portfolio-details/cultural-journey",
+    url: "/portfolio-details/umesh-mundada",
   },
   {
     id: 9,
