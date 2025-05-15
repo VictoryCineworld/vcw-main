@@ -1,112 +1,84 @@
-import React, { useMemo } from "react";
+import React from "react";
 import brandData from "@data/brand-data-new";
 
-const ClientSlider = ({ brandWrapperClass, borderClass, columnGaps = [10, 10, 10, 10] }) => {
-  // Define different animation durations (in seconds) for each reel.
-  const animationDurations = [16, 11, 15, 14];
-
-  // Split the brandData into four separate arrays.
-  const dividedReels = useMemo(() => {
-    const chunkSize = Math.floor(brandData.length / 4);
-    return Array.from({ length: 4 }, (_, index) => {
-      const chunk = brandData.slice(index * chunkSize, (index + 1) * chunkSize);
-      return [...chunk, ...chunk]; // Duplicate for seamless animation.
-    });
-  }, []);
-
+const ClientSlider = () => {
   return (
-    <div className={brandWrapperClass ? brandWrapperClass : "brand-area bg-common-black section-spacing"}>
+    <div className="brand-area">
       <div className="container">
-        <div className="row section-spacing-bottom wow fadeInUp" data-delay="0.3s">
+        {/* Section Heading */}
+        <div className="row section-spacing-bottom">
           <div className="col-12">
             <div className="fm-director-sec-title text-center">
-              <span className="section-subtitle title-anim">OUR WORKS</span>
-              <div>
-                <h2 className="section-main-title text-white title-anim featured-work-title">
-                  Growing with our Clients
-                </h2>
-              </div>
+              <span className="section-subtitle">OUR WORKS</span>
+              <h2 className="section-main-title">Growing with our Clients</h2>
             </div>
           </div>
         </div>
-        <div className="slot-machine-container">
-          {dividedReels.map((reelData, reelIndex) => (
-            <div 
-              key={reelIndex} 
-              className="slot-machine-column" 
-              style={{ gap: `${columnGaps[reelIndex] || 10}px` }} // Default value fallback
-            >
-              <div
-                className="slot-machine-content"
-                style={{
-                  animation: `scroll ${animationDurations[reelIndex]}s linear infinite`,
-                }}
-              >
-                {reelData.map((item, i) => (
-                  <div
-                    key={i}
-                    className={borderClass ? borderClass : "fm-brand"}
-                    style={{
-                      maxHeight: "180px",
-                      marginBottom: `${columnGaps[reelIndex] || 10}px`, // Default value fallback
-                    }}
-                  >
-                    {item.brandSvg}
-                  </div>
-                ))}
-              </div>
+
+        {/* Logo Grid */}
+        <div className="brand-grid">
+          {brandData.map((item, i) => (
+            <div key={i} className="brand-box">
+              {item.brandSvg}
             </div>
           ))}
         </div>
       </div>
 
-      {/* Inline CSS using a JSX style block */}
+      {/* Inline styles */}
       <style jsx>{`
-        .slot-machine-container {
-          display: flex;
-          justify-content: space-between;
-          gap: 20px; /* General horizontal gap */
+        .brand-area {
+          padding: 60px 0;
+          background: #000; /* Or whatever background you want */
         }
 
-        .slot-machine-column {
-          width: 40%;
-          height: 300px;
-          overflow: hidden;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        .section-spacing-bottom {
+          margin-bottom: 40px;
         }
 
-        @keyframes scroll {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-50%);
-          }
+        .text-center {
+          text-align: center;
         }
 
-        :global(.fm-brand img) {
-          width: 250px;
-          height: 135px;
-          object-fit: contain;
+        .section-subtitle {
+          color: #ccc;
+          font-size: 16px;
+          margin-bottom: 10px;
           display: block;
-          margin: 0 auto;
+        }
+
+        .section-main-title {
+          color: #fff;
+          font-size: 32px;
+          margin: 0;
+        }
+
+        .brand-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+        }
+
+        .brand-box {
+          background-color: transparent; /* Transparent box */
+          border: 1px solid #666666; /* Thin border */
+          border-radius: 3px; /* Small radius */
+          padding: 10px;
+          height: 135px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        :global(.brand-box img) {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
         }
 
         @media (max-width: 768px) {
-          .slot-machine-container {
-            flex-wrap: wrap;
-            justify-content: space-around;
-          }
-          .slot-machine-column {
-            width: 48%;
-            height: 170px;
-            margin-bottom: 20px;
-          }
-          .slot-machine-column:nth-child(n+3) {
-            display: none;
+          .brand-grid {
+            grid-template-columns: repeat(2, 1fr);
           }
         }
       `}</style>
