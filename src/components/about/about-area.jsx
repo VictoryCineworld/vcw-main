@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBg from "@assets/img/bg/about-bg.jpg";
+import AboutBg from "@assets/img/bg/image.png";
 import Image from "next/image";
 
 const AboutArea = () => {
@@ -23,17 +23,14 @@ const AboutArea = () => {
           >
             <div className="section-title">
               <h2 className="section-main-title about-main-title title-anim">
-                On-Demand Video <br />
-                Production Company
+                Turning Ideas Into Visual Stories That Captivate
+                <br />
               </h2>
               <p className="mb-5">
-                Our work flow is collaborative and transparent, ensuring every
-                step of your journey with us is smooth and result oriented. We
-                are your creative partners. We build strong relationships with
-                all our clients, understand their unique needs, and deliver
-                exceptional results that exceed expectations. Our Process is a
-                seamless journey of delivering results. Here&apos;s a glimpse into
-                how we work:
+                At VictoryCineworld, we believe that every great video starts
+                with a powerful idea and a seamless process to bring it to life.
+                Our production journey is designed to ensure creativity,
+                quality, and collaboration at every stage. Here's how we do it:
               </p>
               <div className="section-text about-text">
                 {/* <p>
@@ -47,7 +44,7 @@ const AboutArea = () => {
         </div>
         <div className="about-thumb-wrapper wow fadeInUp" data-wow-delay="0.4s">
           <div className="about-exp">
-            <h4 className="about-exp-num">10</h4>
+            <h4 className="about-exp-num">20+</h4>
             <p className="about-exp-text small text-white">
               YEARS OF <br /> EXPERIENCE
             </p>

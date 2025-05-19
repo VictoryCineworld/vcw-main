@@ -18,13 +18,8 @@ const index = () => {
         <Breadcrumb title="Our Process" subTitle="Our Process" />
         {/* <ServicesSection /> */}
         <AboutArea />
-        <TestimonialSliderOne />
         <AchievementArea />
-        <TeamSectionTwo teamBottomBorder={true} />
-        <BrandAreaSection
-          brandWrapperClass="brand-area section-spacing"
-          borderClass="fm-brand"
-        />
+      
         <ContactSection />
       </main>
       <FooterOne />

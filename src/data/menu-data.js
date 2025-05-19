@@ -17,7 +17,7 @@ const menu_data = [
     id: 2,
     hasDropdown: true,
     title: "About",
-    link: "/movie",
+    link: "",
     submenus: [
       { title: "Our Process", link: "/about" },
       { title: "Team", link: "/team" },
@@ -33,7 +33,7 @@ const menu_data = [
     mega_menus: [
       {
         title: "Content Creation & Content Designing", // Ensured consistency in naming
-        link: "/services/content-creation-content-designing",
+        link: "",
         submenus: [
           {
             title: "Social Media Videos",
@@ -56,7 +56,7 @@ const menu_data = [
   
       {
         title: "Digital Marketing",
-        link: "/services/digital-marketing", // Updated to include "/services"
+        link: "", // Updated to include "/services"
         submenus: [
           {
             title: "SEO",
@@ -92,7 +92,7 @@ const menu_data = [
       },
       {
         title: "IT Services",
-        link: "/services/it-services", // Updated to include "/services"
+        link: "", // Updated to include "/services"
         submenus: [
           {
             title: "Web Design & Development",
@@ -110,7 +110,7 @@ const menu_data = [
       },
       {
         title: "Video Production",
-        link: "/services/video-production", // Updated to include "/services"
+        link: "", // Updated to include "/services"
         submenus: [
           {
             title: "Video Production Services",
@@ -140,7 +140,7 @@ const menu_data = [
       },
       {
         title: "Informative Videos",
-        link: "/services/informative-videos", // Updated to include "/services"
+        link: "", // Updated to include "/services"
         submenus: [
           {
             title: "Documentary",
