@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImg from '@assets/img/bg/about-bg.jpg'
+import AboutImg from '@assets/img/bg/about-bg.png'
 import Image from 'next/image';
 
 const HomeAboutThere = () => {
