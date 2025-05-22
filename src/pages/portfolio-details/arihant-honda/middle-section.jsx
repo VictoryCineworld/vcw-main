@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
-import img from "@assets/img/brand/honda-2.jpg";
+import img from "@assets/img/brand/honda/honda_banner.jpg";
 
 const MiddleSection = ({ item }) => {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
-import img from "@assets/img/brand/prashant.png";
+import img from "@assets/img/brand/roshni/roshni_banner.jpg";
 
 const MiddleSection = ({ item }) => {
   return (
@@ -9,7 +9,7 @@ const MiddleSection = ({ item }) => {
       <div className="case-meta-wrapper">
         <div className="case-meta-item">
           <p>
-            <strong>Client : </strong>Dr Prashant Chawan
+            <strong>Client : </strong>Dr Roshni Totla
           </p>
         </div>
         <div className="case-meta-item">

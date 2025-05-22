@@ -25,7 +25,7 @@ const PortfolioData = [
   {
     id: 3,
     title: "Arihant Honda",
-    image: "/assets/img/brand/honda-1.jpg",
+    image: "/assets/img/brand/honda/honda.jpg",
     date: "February 2025",
     description: "Urban exploration of skyline views.",
     url: "/portfolio-details/arihant-honda",
@@ -57,7 +57,7 @@ const PortfolioData = [
   {
     id: 7,
     title: "Dr Roshni Totla",
-    image: "/assets/img/brand/Roshni-2.png",
+    image: "/assets/img/brand/roshni/roshni.jpg",
     date: "November 2024",
     description: "Dive into traditions and heritage.",
     url: "/portfolio-details/roshni-totla",
@@ -145,7 +145,7 @@ const PortfolioData = [
   {
     id: 18,
     title: "Yalla Yalla",
-    image: "/assets/img/brand/YY-1.png",
+    image: "/assets/img/brand/yalla_yalla/yalla.jpg",
     date: "November 2024",
     description: "Dive into traditions and heritage.",
     url: "/portfolio-details/cultural-journey",

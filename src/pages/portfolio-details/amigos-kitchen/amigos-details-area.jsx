@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import MiddleSection from "./middle-section";
 
 const sliderItems = [
   {
@@ -34,6 +35,7 @@ const testimonials = [
 const AmigosPortfolioDetailsArea = () => {
   return (
     <div className="container-fluid px-5 py-5" style={{ maxWidth: "1600px" }}>
+      <MiddleSection/>
       <div className="row gx-5 gy-5">
         {/* LEFT SECTION UPDATED */}
         <div className="col-lg-8">
