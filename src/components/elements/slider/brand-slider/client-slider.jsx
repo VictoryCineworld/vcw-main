@@ -29,12 +29,10 @@ const ClientSlider = () => {
       <style jsx>{`
         .brand-area {
           padding: 60px 0;
-          background: #000; /* Or whatever background you want */
+          background: #000;
         }
 
-        .section-spacing-bottom {
-          margin-bottom: 40px;
-        }
+       
 
         .text-center {
           text-align: center;
@@ -43,26 +41,27 @@ const ClientSlider = () => {
         .section-subtitle {
           color: #ccc;
           font-size: 16px;
-          margin-bottom: 10px;
+          margin-bottom: 5px; /* reduce spacing between subtitle and title */
           display: block;
         }
 
         .section-main-title {
           color: #fff;
           font-size: 32px;
-          margin: 0;
+          margin: 0; /* remove default bottom margin */
         }
 
         .brand-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 20px;
+          margin-top: 0; /* no extra spacing at top */
         }
 
         .brand-box {
-          background-color: transparent; /* Transparent box */
-          border: 1px solid #666666; /* Thin border */
-          border-radius: 3px; /* Small radius */
+          background-color: transparent;
+          border: 1px solid #666666;
+          border-radius: 3px;
           padding: 10px;
           height: 135px;
           display: flex;

@@ -21,13 +21,18 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="bg-black section-spacing text-white">
+    <section className="bg-black text-white" style={{ paddingTop: "10px", paddingBottom: "80px" }}>
       <div className="container">
         <div className="col-12">
-          <div className="fm-director-sec-title text-center">
-            <span className="section-subtitle title-anim">Testimonials</span>
+          <div className="fm-director-sec-title text-center" style={{ marginTop: "20px", marginBottom: "20px" }}>
+            <span className="section-subtitle title-anim" style={{ marginBottom: "10px", display: "block" }}>
+              Testimonials
+            </span>
             <div>
-              <h2 className="section-main-title text-white title-anim featured-work-title pb-5">
+              <h2
+                className="section-main-title text-white title-anim featured-work-title"
+                style={{ margin: "0", paddingBottom: "20px" }}
+              >
                 Hear from our Customers
               </h2>
             </div>
@@ -35,7 +40,6 @@ const TestimonialSlider = () => {
         </div>
 
         <div className="row" style={{ height: "500px" }}>
-          {/* Video Slider full width now */}
           <div className="col-lg-12 h-100 position-relative">
             <Swiper
               modules={[Pagination]}
@@ -55,7 +59,7 @@ const TestimonialSlider = () => {
                 <SwiperSlide key={item.id}>
                   <div style={{ width: "100%", height: "100%" }}>
                     <video
-                      key={index} // force reloading video on slide change
+                      key={index}
                       autoPlay
                       muted
                       playsInline
@@ -100,8 +104,6 @@ const TestimonialSlider = () => {
               <div className="testimonial-pagination circle-dot-pagination fade_bottom_2"></div>
             </div>
           </div>
-
-          {/* Text testimonial slider removed */}
         </div>
       </div>
 

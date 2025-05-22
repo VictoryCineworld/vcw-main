@@ -3,12 +3,10 @@ import { technologies } from '@data/tech';
 
 const TechSection = () => {
   const [activeCategory, setActiveCategory] = useState('Video Production');
-  
-  // Define Original Logo Colors
-  const white = '#FFFFFF';
-  const gold = '#DDBE7B'; // Updated to original gold color
 
-  // Button Styles
+  const white = '#FFFFFF';
+  const gold = '#DDBE7B';
+
   const baseButtonStyle = {
     padding: '10px 20px',
     margin: '8px',
@@ -22,7 +20,7 @@ const TechSection = () => {
     ...baseButtonStyle,
     backgroundColor: gold,
     color: white,
-    boxShadow: `0 4px 8px rgba(255, 215, 0, 0.3)`, // Adjusted shadow color
+    boxShadow: `0 4px 8px rgba(255, 215, 0, 0.3)`,
   };
 
   const inactiveButtonStyle = {
@@ -32,7 +30,6 @@ const TechSection = () => {
     opacity: 0.9,
   };
 
-  // Icon Wrapper & Icon Text Styles
   const iconWrapperStyle = {
     display: 'inline-block',
     transition: 'transform 0.3s',
@@ -42,7 +39,7 @@ const TechSection = () => {
 
   const iconStyle = {
     fontSize: '40px',
-    color: gold, // Updated icon color
+    color: gold,
     transition: 'color 0.3s ease',
   };
 
@@ -53,14 +50,26 @@ const TechSection = () => {
   };
 
   return (
-    <section className="tech-section section-spacing soft-blackbg text-center">
+    <section
+      className="tech-section section-spacing soft-blackbg text-center"
+      style={{ paddingTop: '10px', paddingBottom: '60px' }}
+    >
       <div style={{ minHeight: '400px' }} className="container">
-        <h2 className="section-main-title text-white title-anim team-name-clr mb-5">
+        <h2
+          className="section-main-title text-white title-anim team-name-clr mb-5"
+          style={{ marginTop: '39px', paddingBottom: '20px' }}
+        >
           Technologies We Work With
         </h2>
 
         {/* Category Buttons */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+          }}
+        >
           {Object.keys(technologies).map((category) => {
             const isActive = category === activeCategory;
             return (
@@ -88,9 +97,15 @@ const TechSection = () => {
         </div>
 
         {/* Technology Icons */}
-        <div className="row justify-content-center container" style={{ marginTop: '40px' }}>
+        <div
+          className="row justify-content-center container"
+          style={{ marginTop: '40px' }}
+        >
           {technologies[activeCategory].map((tech, index) => (
-            <div key={index} className="col-6 col-md-3 my-4 d-flex flex-column align-items-center">
+            <div
+              key={index}
+              className="col-6 col-md-3 my-4 d-flex flex-column align-items-center"
+            >
               <div
                 style={iconWrapperStyle}
                 onMouseEnter={(e) => {
