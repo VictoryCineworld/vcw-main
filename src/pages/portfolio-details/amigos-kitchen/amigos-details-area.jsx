@@ -1,8 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-// import amigos from "@assets/video/amigos.png";
 
 const sliderItems = [
   {
@@ -34,143 +31,178 @@ const testimonials = [
   },
 ];
 
-const sectionHeadingStyle = {
-  fontSize: "3rem",
-  fontWeight: "700",
-  textAlign: "center",
-  marginBottom: "1.5rem",
-  color: "#343a40",
-  borderBottom: "2px solid #ddd",
-  paddingBottom: "0.5rem",
-};
-
 const AmigosPortfolioDetailsArea = () => {
   return (
-    <div className="container-fluid">
-      <header className="bg-white text-center py-4">
-        {/* <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-          Amigos Portfolio Details
-        </h1> */}
-      </header>
-
-      <div className="row p-4">
-        {/* LEFT SECTION */}
-        <div className="col-md-8">
-          <h2 style={sectionHeadingStyle}>
+    <div className="container-fluid px-5 py-5" style={{ maxWidth: "1600px" }}>
+      <div className="row gx-5 gy-5">
+        {/* LEFT SECTION UPDATED */}
+        <div className="col-lg-8">
+          <h2 className="mb-5 fw-bold border-bottom pb-3 text-dark" style={{ fontSize: "3.25rem", lineHeight: "2.6rem" }}>
             Instagram Management for Amigose Kitchen
           </h2>
-{/* 
-          <div className="mb-4">
-            <h4 className="fw-bold text-center">Client Overview</h4>
-            <div className="p-3 bg-light rounded shadow-sm">
-              <p>
-                <strong>Amigose Kitchen</strong> is a well-known restaurant in
-                Chhatrapati Sambhajinagar, celebrated for its fusion dishes and
-                lively atmosphere. A hotspot for foodies and families alike, the
-                brand partnered with <strong>Victory Cineworld</strong> to boost
-                its digital game.
+
+          <section className="mb-5">
+            <h4
+              className="fw-semibold text-secondary mb-3"
+              style={{ fontSize: "2.35rem", letterSpacing: "0.02em" }}
+            >
+              Client Overview
+            </h4>
+            <div
+              className="bg-light p-4 rounded shadow-sm"
+              style={{ fontSize: "1.05rem", lineHeight: "1.7", color: "#333" }}
+            >
+              <p className="mb-0"  style={{ fontSize: "2rem", letterSpacing: "0.02em" }}>
+                <strong>Amigose Kitchen</strong> is a renowned standalone restaurant
+                in Chhatrapati Sambhajinagar, celebrated for its fusion cuisine and
+                vibrant ambiance. They partnered with <strong>Victory Cineworld</strong> to enhance
+                their Instagram presence through strategic content management.
               </p>
             </div>
-          </div>
+          </section>
 
-          <div className="mb-4">
-            <h4 className="fw-bold text-success text-center">
-              Project Scope & Objectives
+          <section className="mb-5">
+            <h4
+              className="fw-semibold text-secondary mb-3"
+              style={{ fontSize: "2.35rem", letterSpacing: "0.02em" }}
+            >
+              Project Goals
             </h4>
-            <ul className="ps-3">
-              <li>🎯 Build a visually enticing and consistent brand presence.</li>
-              <li>📈 Drive footfall through engaging Instagram content.</li>
-              <li>📍 Increase popularity across Chhatrapati Sambhajinagar.</li>
-              <li>🍽️ Highlight special dishes, chef stories & ambiance.</li>
+            <ul
+              className="ps-4"
+              style={{
+                fontSize: "2.05rem",
+                lineHeight: "1.7",
+                color: "#444",
+                marginBottom: "0",
+              }}
+            >
+              <li className="mb-2">- Establish a cohesive and visually appealing brand identity.</li>
+              <li className="mb-2">- Drive foot traffic through engaging Instagram content.</li>
+              <li className="mb-2">- Increase awareness within the local community.</li>
+              <li className="mb-2">- Highlight culinary offerings and restaurant atmosphere.</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="mb-4">
-            <h4 className="fw-bold text-warning text-center">
-              Service Package Delivered
+          <section className="mb-5">
+            <h4
+              className="fw-semibold text-secondary mb-4"
+              style={{ fontSize: "2.35rem", letterSpacing: "0.02em" }}
+            >
+              Services Delivered
             </h4>
-            <div className="row g-3">
+            <div className="row g-4">
               {[
-                "📱 Instagram Handling",
-                "🎬 Reels Production (8/mo)",
-                "✨ Motion Graphics (4/mo)",
-                "📸 Product Shoots",
-                "🎞️ Post-Production",
-              ].map((title, idx) => (
-                <div className="col-sm-6" key={idx}>
-                  <div className="p-3 bg-light rounded shadow-sm h-100">
-                    <h5 className="text-secondary">{title}</h5>
+                {
+                  title: "Instagram Management",
+                  points: [
+                    "Content scheduling and publishing",
+                    "Community engagement (DMs, comments)",
+                  ],
+                },
+                {
+                  title: "Reels Production (8/month)",
+                  points: [
+                    "Creative food and lifestyle storytelling",
+                    "High-quality visuals with smooth editing",
+                  ],
+                },
+                {
+                  title: "Motion Graphics (4/month)",
+                  points: [
+                    "Festive, offers, and promotional posts",
+                    "Modern layouts and branding consistency",
+                  ],
+                },
+                {
+                  title: "Product Photography",
+                  points: [
+                    "Dish showcases and chef portraits",
+                    "Focus on natural lighting and detail",
+                  ],
+                },
+                {
+                  title: "Post-Production",
+                  points: [
+                    "Color grading and music overlay",
+                    "Optimized export for platform engagement",
+                  ],
+                },
+              ].map((item, idx) => (
+                <div className="col-md-6" key={idx}>
+                  <div
+                    className="p-4 border rounded bg-white h-100 shadow-sm"
+                    style={{ fontSize: "2.05rem", lineHeight: "1.6", color: "#333" }}
+                  >
+                    <h5 className="fw-semibold mb-3">{item.title}</h5>
                     <ul className="ps-3 mb-0">
-                      <li>
-                        {title.includes("Instagram")
-                          ? "Content planning & publishing"
-                          : title.includes("Reels")
-                          ? "Aesthetic food & BTS reels"
-                          : title.includes("Motion")
-                          ? "Festive & promo graphics"
-                          : title.includes("Shoots")
-                          ? "Dishes, chef plating & customer candids"
-                          : "Editing, transitions & licensed music"}
-                      </li>
-                      <li>
-                        {title.includes("Instagram")
-                          ? "DM & comment engagement"
-                          : title.includes("Reels")
-                          ? "Creative storytelling moments"
-                          : title.includes("Motion")
-                          ? "Brand colors & modern layout"
-                          : title.includes("Shoots")
-                          ? "Natural lighting & crisp visuals"
-                          : "Reel optimization for engagement"}
-                      </li>
+                      {item.points.map((point, i) => (
+                        <li key={i} className="mb-2">
+                          {point}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </section>
 
-          <div className="mb-4">
-            <h4 className="fw-bold text-info text-center">📊 Results & Impact</h4>
-            <ul className="ps-3">
-              <li>📈 Spike in followers & story views</li>
-              <li>💬 More engagement and UGC tagging</li>
-              <li>🔥 Several viral reels = full weekends</li>
-              <li>💡 Stronger brand recall across the city</li>
-            </ul>
-          </div>
-
-          <div className="mb-4">
-            <h4 className="fw-bold text-danger text-center">
-              🏁 Conclusion & Key Takeaways
+          <section className="mb-5">
+            <h4
+              className="fw-semibold text-secondary mb-3"
+              style={{ fontSize: "2.35rem", letterSpacing: "0.05em" }}
+            >
+              Results & Impact
             </h4>
-            <div className="p-3 bg-light rounded shadow-sm">
-              <p>
-                Amigose Kitchen’s success on Instagram shows the power of
-                localized, strategic content. With compelling visuals and expert
-                storytelling, Victory Cineworld turned their page into a brand
-                magnet.
+            <ul
+              className="ps-4"
+              style={{
+                fontSize: "2.05rem",
+                lineHeight: "1.7",
+                color: "#444",
+                marginBottom: "0",
+              }}
+            >
+              <li className="mb-2">- Growth in follower count and story views</li>
+              <li className="mb-2">- Improved user engagement and content interaction</li>
+              <li className="mb-2">- Increased weekend foot traffic via viral reels</li>
+              <li className="mb-2">- Elevated digital brand perception in the region</li>
+            </ul>
+          </section>
+
+          <section className="mb-5">
+            <h4
+              className="fw-semibold text-secondary mb-3"
+              style={{ fontSize: "2.35rem", letterSpacing: "0.02em" }}
+            >
+              Conclusion
+            </h4>
+            <div
+              className="bg-light p-4 rounded shadow-sm"
+              
+            >
+              <p className="mb-0" style={{ fontSize: "2rem", lineHeight: "2", color: "#333" }}>
+                This case study illustrates the effectiveness of visual branding,
+                strategic content, and consistent engagement. Amigose Kitchen's
+                Instagram page transformed into a local digital hotspot, reflecting
+                its unique culinary identity.
               </p>
-              <p className="fst-italic text-muted text-center">
-                (Sample visuals, thumbnails, and analytics can be added here.)
-              </p>
-            </div> 
-          </div>*/}
+            </div>
+          </section>
         </div>
 
-        {/* RIGHT SECTION */}
-        <div className="col-md-4">
-          <h2 style={sectionHeadingStyle}>Slider</h2>
+        {/* RIGHT SECTION UNCHANGED */}
+        <div className="col-lg-4">
+          <h4 className="fw-bold border-bottom pb-2 mb-4 text-dark">Visual Preview</h4>
           <div
+            className="mb-5"
             style={{
               width: "100%",
-              maxWidth: "360px",
-              height: "640px",
-              margin: "0 auto",
+              height: "600px",
               borderRadius: "10px",
               overflow: "hidden",
-              backgroundColor: "#000",
-              boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
             }}
           >
             <Carousel indicators={false}>
@@ -194,28 +226,19 @@ const AmigosPortfolioDetailsArea = () => {
             </Carousel>
           </div>
 
-          <div className="mt-5">
-            <h2 style={sectionHeadingStyle}>Testimonials</h2>
-            <Carousel indicators={false} controls={false} interval={4000} fade>
-              {testimonials.map((t, index) => (
-                <Carousel.Item key={index}>
-                  <div
-                    className="card p-3 shadow-sm mx-3"
-                    style={{
-                      borderRadius: "10px",
-                      backgroundColor: "#f9f9f9",
-                      border: "none",
-                    }}
-                  >
-                    <blockquote className="blockquote mb-0 text-center">
-                      <p style={{ fontStyle: "italic" }}>"{t.quote}"</p>
-                      <footer className="blockquote-footer mt-2">{t.author}</footer>
-                    </blockquote>
-                  </div>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          </div>
+          <h4 className="fw-bold border-bottom pb-2 mb-3 text-dark">Client Feedback</h4>
+          <Carousel indicators={false} controls={false} interval={4000} fade>
+            {testimonials.map((t, index) => (
+              <Carousel.Item key={index}>
+                <div className="card p-3 shadow-sm border-0 bg-light">
+                  <blockquote className="blockquote mb-0 text-center">
+                    <p className="fst-italic">"{t.quote}"</p>
+                    <footer className="blockquote-footer mt-2">{t.author}</footer>
+                  </blockquote>
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </div>
       </div>
     </div>

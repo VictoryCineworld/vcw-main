@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CaseSubtitleIcon from "@svg/case-subtitle-icon";
-import img from "@assets/img/brand/aura_ability.png";
+import img from "@assets/img/brand/aura_ability/aura.jpg";
 
 const MiddleSection = ({ item }) => {
   return (
@@ -23,10 +23,9 @@ const MiddleSection = ({ item }) => {
             <strong>Industry : </strong>Healing & well-being
           </p>
         </div>
-        <div className="case-meta-item"></div>
       </div>
 
-      {/* ✅ Updated Image Wrapper */}
+      {/* ✅ Responsive & Properly Fit Image Box */}
       <div
         className="case-details-thumb"
         style={{
@@ -35,32 +34,31 @@ const MiddleSection = ({ item }) => {
           height: "500px",
           marginTop: "30px",
           marginBottom: "30px",
+          overflow: "hidden",
+          borderRadius: "12px", // optional: rounded corners
         }}
       >
         <Image
           src={img}
-          alt="Amigos Kitchen"
+          alt="Aura Ability Unfold"
           fill
           style={{ objectFit: "cover" }}
+          priority
           sizes="(max-width: 768px) 100vw, 800px"
         />
       </div>
 
-      <h4 className="case-subtitle mb-25 ">
+      <h4 className="case-subtitle mb-25">
         <span>
           <CaseSubtitleIcon />
         </span>
         Case Study: Social Media Content Creation for Aura Ability Unfold
         (Jayashree Ma’am)
       </h4>
-      <h5>Client Overview </h5>
+      <h5>Client Overview</h5>
       <p className="mb-55" style={{ textAlign: "justify" }}>
         Aura Ability Unfold, led by Jayashree Agrawaal, is a holistic wellness
-        and spiritual guidance platform based in India. Jayashree is a renowned
-        Numerologist, Certified Hypnotherapist, Tarot Card Reader, Healer, and
-        Astrologer. With her in-depth expertise and growing clientele, she
-        wanted to enhance her digital presence to reach a wider audience and
-        build a strong online brand.
+        and spiritual guidance platform based in India...
       </p>
 
       <h4 className="case-subtitle mb-15">
@@ -69,23 +67,10 @@ const MiddleSection = ({ item }) => {
         </span>
         Project Scope & Objectives
       </h4>
-      <p className="mb-10 " style={{ textAlign: "justify" }}>
+      <p className="mb-10" style={{ textAlign: "justify" }}>
         Victory Cineworld partnered with Aura Ability Unfold to provide
         professional content creation and digital support for Instagram and
-        YouTube. The goals included:
-      </p>
-      <p className="mb-10">
-        - Establishing credibility and trust in the online wellness community.
-      </p>
-      <p className="mb-10">
-        - Educating the audience on numerology, astrology, healing, and tarot
-        through regular video content.
-      </p>
-      <p className="mb-10">
-        - Creating a personal connect between Jayashree Ma’am and her followers.
-      </p>
-      <p className="mb-10">
-        - Building a steady growth of followers and engagement.
+        YouTube...
       </p>
     </div>
   );
